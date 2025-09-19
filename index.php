@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb# website:http://ogp.me/ns/website#">
+<meta charset="UTF-8">
+<title>学勢調査</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="keywords" content="学勢調査">
+<meta name="description" content="学勢調査は、東京科学大学で2年に一度開催される全学生を対象としたこの大規模なWebアンケート調査です。アンケート結果をもとに学生自ら大学に対して提言を行い、大学を改善します。">
+<meta property="fb:app_id" content="XXXXX">
+<meta property="og:url" content="https://www.siengp.titech.ac.jp/gakuseichousa/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="学勢調査">
+<meta property="og:image" content="https://www.siengp.titech.ac.jp/gakuseichousa/logo.png">
+<meta property="og:description" content="学勢調査は、東京科学大学で2年に一度開催される全学生を対象としたこの大規模なWebアンケート調査です。アンケート結果をもとに学生自ら大学に対して提言を行い、大学を改善します。">
+<meta property="og:site_name" content="東京科学大学 学勢調査">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="gakuseichousa">
+<meta name="twitter:title" content="学勢調査">
+<meta name="twitter:description" content="学勢調査は、東京科学大学で2年に一度開催される全学生を対象としたこの大規模なWebアンケート調査です。アンケート結果をもとに学生自ら大学に対して提言を行い、大学を改善します。">
+<meta name="twitter:image" content="https://www.siengp.titech.ac.jp/gakuseichousa/logo.png">
+<meta name="robots" content="max-image-preview:large">
+<link rel="canonical" href="https://www.siengp.titech.ac.jp/gakuseichousa/">
+<link rel="icon" sizes="32x32" href="favicon.ico">
+<link rel="preload" as="style" fetchpriority="high" href="assets/css/font.css">
+<link rel="stylesheet" href="assets/css/font.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "東京科学大学 学勢調査",
+        "url": "https://www.siengp.titech.ac.jp/gakuseichousa/",
+        "logo": "https://www.siengp.titech.ac.jp/gakuseichousa/logo.png"
+      }
+</script>
+</head>
+<body id="top">
+<header class="g-header" data-js-header>
+<div class="c-globalHeader">
+<div class="c-globalHeader__title">
+<a class="c-globalHeader__logo" href="">
+<svg width="233" height="48" viewBox="0 0 233 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M33.7095 1.11523C19.3904 1.11523 7.46761 5.25243 0.771859 10.8604C0.390242 11.187 0.118652 11.6222 0.118652 12.2211V22.5651C0.118652 22.3478 0.281607 22.1842 0.60891 21.9119C9.80955 14.508 21.7867 12.2754 33.7095 12.2754V1.11523Z" fill="currentColor"/>
+<path d="M33.7095 34.9561V24.5801C33.7095 24.8524 33.2193 24.961 32.4574 25.0153C20.0987 25.7779 8.28448 29.5884 0.118652 35.4136V47.6086C7.71275 42.3663 18.7463 37.8746 29.2109 36.3928C29.3397 36.3767 31.8961 36.0035 32.2158 35.9547C32.6051 35.8955 33.4108 35.8092 33.6455 35.2994C33.6949 35.1929 33.7102 35.0522 33.7095 34.9561Z" fill="currentColor"/>
+<path d="M33.7095 24.581C33.7095 24.3087 33.4372 24.0364 33.0013 23.7098C27.3118 19.7425 20.1808 16.9327 11.9628 15.6172C7.88823 17.0942 4.05323 19.1409 0.60891 21.9131C0.281607 22.1854 0.118652 22.3491 0.118652 22.5663C0.118652 22.7843 0.227287 22.8393 0.66323 22.8936C6.0261 23.4647 12.2588 24.8874 17.9921 27.3546C22.5903 26.1262 27.4797 25.3233 32.4574 25.0162C33.2193 24.9619 33.7095 24.8533 33.7095 24.581Z" fill="#7F96C2"/>
+<path d="M51.2493 10.324H49.7061V1.11513H51.2493V10.324ZM53.3461 3.56916H54.7451C54.7716 3.85955 54.7848 4.30802 54.7848 4.66386H54.8113C55.2326 3.87279 55.9847 3.41109 56.8956 3.41109C58.6372 3.41109 59.2438 4.59841 59.2438 6.41875V10.324H57.7925V7.02598C57.7925 5.65411 57.6999 4.63811 56.5 4.63811C55.9318 4.63811 55.4304 5.00719 55.1274 5.5615C54.9297 5.93058 54.8377 6.44521 54.8377 7.18407V10.324H53.399V5.61444C53.399 4.92849 53.399 4.21609 53.3461 3.56916ZM60.7863 10.1395L60.8789 8.88602C61.4332 9.18965 62.0001 9.33448 62.514 9.33448C63.1477 9.33448 63.663 9.04409 63.663 8.5037C63.663 8.00231 63.3726 7.77808 62.3559 7.34284C61.1818 6.84145 60.7466 6.3526 60.7466 5.42918C60.7466 4.17571 61.7236 3.41109 63.1609 3.41109C63.7549 3.41109 64.3218 3.50301 64.771 3.68756L64.6387 4.87557C64.1373 4.62487 63.6756 4.53225 63.2006 4.53225C62.6205 4.53225 62.1714 4.80942 62.1714 5.31081C62.1714 5.81221 62.4875 6.00997 63.3726 6.3526C64.546 6.82821 65.1136 7.35538 65.1136 8.38463C65.1136 9.7565 64.0718 10.4828 62.6066 10.4828C61.9471 10.4828 61.3796 10.377 60.7863 10.1395ZM67.0384 8.08171V4.73072H65.8385V3.5824H67.0516V2.07822L68.4368 1.60329V3.5824H70.0865V4.73072H68.4368V7.67223C68.4368 8.75371 68.6081 9.2558 69.4528 9.2558C69.7035 9.2558 69.9284 9.20287 70.1262 9.12349L70.1659 10.2976C69.8623 10.4034 69.4925 10.4696 69.0962 10.4696C67.5273 10.4696 67.0384 9.5984 67.0384 8.08171ZM73.1067 2.31569H71.5628V0.772511H73.1067V2.31569ZM73.0677 10.324H71.6025V3.56916H73.0677V10.324ZM75.5865 8.08171V4.73072H74.386V3.5824H75.5998V2.07822L76.9856 1.60329V3.5824H78.6346V4.73072H76.9856V7.67223C76.9856 8.75371 77.1569 9.2558 78.0009 9.2558C78.2516 9.2558 78.4759 9.20287 78.6736 9.12349L78.7133 10.2976C78.4097 10.4034 78.0406 10.4696 77.6451 10.4696C76.0747 10.4696 75.5865 9.5984 75.5865 8.08171ZM80.0448 7.81778V3.56916H81.4835V6.9863C81.4835 8.38463 81.6674 9.24256 82.79 9.24256C83.7781 9.24256 84.4251 8.21332 84.4251 6.99952V3.56916H85.8763V8.17362C85.8763 9.01834 85.9028 9.7565 85.955 10.324H84.5839C84.5442 10.0469 84.5177 9.69104 84.5177 9.2558H84.4912C84.1611 9.95497 83.4487 10.4828 82.3143 10.4828C80.9292 10.4828 80.0448 9.48003 80.0448 7.81778ZM88.3555 8.08171V4.73072H87.1549V3.5824H88.368V2.07822L89.7538 1.60329V3.5824H91.4036V4.73072H89.7538V7.67223C89.7538 8.75371 89.9258 9.2558 90.7692 9.2558C91.0205 9.2558 91.2448 9.20287 91.4426 9.12349L91.4823 10.2976C91.1786 10.4034 90.8088 10.4696 90.414 10.4696C88.8436 10.4696 88.3555 9.5984 88.3555 8.08171ZM92.4314 6.90761C92.4314 4.82264 93.6981 3.41109 95.5714 3.41109C97.3528 3.41109 98.3814 4.53225 98.3814 6.93336C98.3814 7.11792 98.3688 7.25023 98.3549 7.38184H93.9084C93.9481 8.55594 94.7671 9.28226 95.9927 9.28226C96.7191 9.28226 97.3131 9.11025 97.8799 8.76763L97.9329 10.0733C97.366 10.3505 96.6397 10.4828 95.8618 10.4828C93.7246 10.4828 92.4314 9.14995 92.4314 6.90761ZM95.5317 4.50579C94.6745 4.50579 94.0011 5.08658 93.9084 6.30036H96.944C96.944 5.07334 96.3758 4.50579 95.5317 4.50579ZM102.654 6.9466C102.654 4.83588 104.039 3.41109 106.019 3.41109C107.998 3.41109 109.383 4.83588 109.383 6.9466C109.383 9.05733 107.998 10.4828 106.019 10.4828C104.039 10.4828 102.654 9.05733 102.654 6.9466ZM107.853 6.9466C107.853 5.50858 107.14 4.59841 106.019 4.59841C104.897 4.59841 104.184 5.50858 104.184 6.9466C104.184 8.38463 104.897 9.2948 106.019 9.2948C107.14 9.2948 107.853 8.38463 107.853 6.9466ZM110.213 4.73072V3.5824H111.638V3.02807C111.638 1.28644 112.258 0.296875 113.867 0.296875C114.223 0.296875 114.54 0.336573 114.831 0.41597L114.712 1.61653C114.501 1.53713 114.29 1.49743 114.052 1.49743C113.326 1.49743 113.076 1.93267 113.076 3.00161V3.5824H114.738V4.73072H113.076V10.324H111.638V4.73072H110.213ZM59.1052 18.0434L58.8231 20.9647C57.4394 20.4006 56.3377 20.1959 55.2611 20.1959C53.3906 20.1959 52.2117 20.9898 52.2117 22.2203C52.2117 23.322 52.8015 24.0135 55.39 24.9619C58.6442 26.1409 60.0279 27.6778 60.0279 30.3171C60.0279 33.8025 57.5676 35.9034 53.4164 35.9034C51.7507 35.9034 50.188 35.6479 48.7269 35.1346L49.0605 31.9828C50.5466 32.7259 51.9812 33.0079 53.2117 33.0079C55.1845 33.0079 56.4143 32.2133 56.4143 30.7788C56.4143 29.4208 55.6713 28.7029 53.032 27.7036C49.9059 26.5511 48.5737 25.1158 48.5737 22.5789C48.5737 19.4013 51.11 17.4027 54.851 17.4027C56.4143 17.4027 57.7215 17.5817 59.1052 18.0434ZM75.0176 32.0852L75.12 35.1862C74.1207 35.5706 72.7878 35.7753 71.3281 35.7753C65.9722 35.7753 62.6407 32.4445 62.6407 26.6534C62.6407 20.8616 65.9722 17.5309 71.1234 17.5309C72.583 17.5309 73.7105 17.6332 75.0176 18.1458L74.8122 21.246C73.6847 20.6569 72.7119 20.4522 71.379 20.4522C68.4061 20.4522 66.459 22.3484 66.459 26.5511C66.459 30.7788 68.5092 32.7774 71.4047 32.7774C72.6861 32.7774 73.7627 32.6235 75.0176 32.0852ZM82.1409 35.5963H78.5538V17.7098H82.1409V35.5963ZM86.446 35.5963V17.7098H96.6188V20.6827H89.9822V24.9619H96.2852V27.909H89.9822V32.5977H96.7727V35.5963H86.446ZM110.686 31.7781L110.532 17.7098H113.787V35.5963H109.251L103.434 21.4515H103.383L103.537 35.5963H100.308V17.7098H104.895L110.661 31.7781H110.686ZM129.494 32.0852L129.596 35.1862C128.598 35.5706 127.265 35.7753 125.804 35.7753C120.449 35.7753 117.117 32.4445 117.117 26.6534C117.117 20.8616 120.449 17.5309 125.599 17.5309C127.06 17.5309 128.187 17.6332 129.494 18.1458L129.289 21.246C128.162 20.6569 127.187 20.4522 125.855 20.4522C122.883 20.4522 120.935 22.3484 120.935 26.5511C120.935 30.7788 122.985 32.7774 125.88 32.7774C127.162 32.7774 128.238 32.6235 129.494 32.0852ZM133.029 35.5963V17.7098H143.202V20.6827H136.566V24.9619H142.869V27.909H136.566V32.5977H143.356V35.5963H133.029ZM163.803 17.7098V20.7593L158.91 20.7342V35.5963H155.271V20.7342L150.376 20.7593V17.7098H163.803ZM181.971 26.6534C181.971 32.5469 178.716 35.9034 173.592 35.9034C168.442 35.9034 165.188 32.5469 165.188 26.6534C165.188 20.7593 168.442 17.4027 173.592 17.4027C178.716 17.4027 181.971 20.7593 181.971 26.6534ZM169.031 26.6534C169.031 31.0608 170.824 33.1103 173.592 33.1103C176.36 33.1103 178.154 31.0608 178.154 26.6534C178.154 22.2453 176.36 20.1959 173.592 20.1959C170.824 20.1959 169.031 22.2453 169.031 26.6534ZM188.941 26.909V35.5963H185.354V17.7098H188.941V25.5511H188.992L194.271 17.7098H198.448L192.349 26.0636L199.857 35.5963H195.347L188.992 26.909H188.941ZM199.318 17.7098H203.316L207.006 25.2948H207.057L210.849 17.7098H214.719L208.8 28.4981V35.5963H205.212V28.549L199.318 17.7098ZM232.323 26.6534C232.323 32.5469 229.068 35.9034 223.944 35.9034C218.793 35.9034 215.539 32.5469 215.539 26.6534C215.539 20.7593 218.793 17.4027 223.944 17.4027C229.068 17.4027 232.323 20.7593 232.323 26.6534ZM219.383 26.6534C219.383 31.0608 221.176 33.1103 223.944 33.1103C226.711 33.1103 228.505 31.0608 228.505 26.6534C228.505 22.2453 226.711 20.1959 223.944 20.1959C221.176 20.1959 219.383 22.2453 219.383 26.6534Z" fill="currentColor"/>
+</svg>
+<span class="c-globalHeader__label">学勢調査</span>
+</a>
+</div>
+</div>
+<div class="c-globalNavigation">
+<div class="c-globalNavigation__header">
+<ul class="c-globalNavigation__navList">
+<li>
+<a href="#">ホーム</a>
+</li>
+    <!--機能未実装-->
+<!-- <li>
+<a href="#">ニュース</a>
+</li>
+<li>
+<a href="#">提言検索</a>
+</li>
+<li>
+<a href="#">調査結果検索</a>
+</li> -->
+</ul>
+</div>
+</div>
+</header>
+
+<div class="contentArea">
+<div class="container">
+<div class="grid grid--itemsCenter grid--noGutter grid--fullWidth md:grid--dirColumnReverse">
+<div class="grid__col grid__col--span3 md:grid__col--span12 grid__col--justifyCenter u-flex u-flex--column u-flex--itemsCenter">
+<div class="u-px-ll">
+<p class="c-paragraph c-paragraph--copyM c-paragraph--weightBlack">学勢調査</p>
+<p class="c-paragraph">大岡山学生支援センター未来人材育成支援室（学生活動支援）</p>
+</div>
+</div>
+<!-- ヘッダーの画像（imgタグのsrcを変更することで画像の変更が可能 -->
+<div class="grid__col grid__col--span9 md:grid__col--span12">
+<section class="splide c-carousel c-carousel--default" aria-label="カルーセルの概要" data-js-carousel="1" data-js-carousel-auto="true" data-js-carousel-loop="true" data-js-carousel-pagination="true"><div class="splide__track">
+<ul class="splide__list"><li class="splide__slide"><div class="c-image"><picture><img src="assets/img/hotei2024_pic.webp" width="1440" height="810" alt="学勢調査2024 提言書奉呈式">
+<!-- </picture></div></li><li class="splide__slide"><div class="c-image"><picture><img src="assets/img/team2024_discuss.webp" width="1440" height="810" alt="ミーティングの様子"> -->
+</picture></div></li><li class="splide__slide"><div class="c-image"><picture><img src="assets/img/teigen2024_top.webp" width="1440" height="810" alt="学勢調査2024提言書表紙">
+</picture></div></li></ul>
+</div>
+<div class="c-carousel__controller">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21"><path d="m16.84 10.91-6.838-6.838-1.484 1.463 4.332 4.333H3.333v2.083h9.517l-4.332 4.332 1.484 1.463 6.837-6.837Z"/></svg>
+</button>
+</div>
+<div class="splide__controls"><button class="splide__toggle is-active" type="button" aria-controls="toggle-track" aria-label="Pause autoplay">
+<svg class="splide__toggle__play" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m22 12-20 11v-22l10 5.5z"></path>
+</svg>
+<svg class="splide__toggle__pause" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m2 1v22h7v-22zm13 0v22h7v-22z"></path>
+</svg>
+</button>
+<ul class="splide__pagination"></ul>
+</div>
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21"><path d="m16.84 10.91-6.838-6.838-1.484 1.463 4.332 4.333H3.333v2.083h9.517l-4.332 4.332 1.484 1.463 6.837-6.837Z"/></svg>
+</button>
+</div>
+</div>
+</section>
+</div></div>
+    <!--ヘッダー下の目次-->
+<div class="c-utilityLinkGroup c-utilityLinkGroup--horizontal"><div class="c-utilityLinkGroup__item">
+<a href="#uptodate" class="c-link c-utilityLink">
+学勢調査2024
+<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
+<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+</svg>
+</a>
+</div><div class="c-utilityLinkGroup__item">
+<a href="#staff" class="c-link c-utilityLink">
+スタッフ募集
+<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
+<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+</svg>
+</a>
+</div><div class="c-utilityLinkGroup__item">
+<a href="#reports" class="c-link c-utilityLink">
+過去の学勢調査
+<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
+<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+</svg>
+</a>
+</div><div class="c-utilityLinkGroup__item">
+<a href="#member" class="c-link c-utilityLink">
+メンバー
+<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
+<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+</svg>
+</a>
+</div><div class="c-utilityLinkGroup__item">
+<a href="#inquiry" class="c-link c-utilityLink">
+お問い合わせ
+<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
+<use xlink:href="assets/img/sprite.svg#arrow_down"></use>
+</svg>
+</a>
+</div></div>
+
+
+<div class="c-pickupContents c-pickupContents--related">
+  <div class="c-pickupContents__inner c-pickupContents__inner--imagePosRight">
+    <div class="c-pickupContents__body">
+      <div class="c-pickupContents__title">
+        <h2 class="c-heading__label" id="about">学勢調査について</h2>
+      </div>
+      <div class="c-pickupContents__description">
+        <p class="c-paragraph">
+          東京科学大学（旧東京工業大学）では、本学における教育改善や施設建設・整備、学内サービス向上といった大学の事業に学生の声を取り入れ、本学をより魅力ある大学とすることを目的とした全学的アンケート調査「学勢調査」を、2年に1度実施しています。
+          <br>Science Tokyoをこうしたい！あれがやりたい！でも・・・」「もう少し、こうなってくれればいいのに・・・」といった学生の声を集め、実現する形へと学生自らがつなげる場、それがこの学勢調査です。
+          <br>全学生を対象としたこの大規模なWebアンケート調査は、2004年の試行を経て2005年より本格実施となりました。全国でも例を見ない、本学独自の取り組みであり、国勢調査になぞらえて「学勢調査」と名付けられました。
+          <br>この調査のユニークな点は、調査結果の集計、解析、提言書作成を、公募に応じたサポーター学生の主導で実施していることです。学生の視点でアンケート結果を読み解き、建設的な提言書を作成し、理事長/学長に提出します。
+          <br>学生からの意見や提言とアンケート結果は大学にフィードバックされ、各組織はできる限りの対応に取り組み、これまでに多くの改善が行われてきました。提言の中には、慎重な検討を要するもの、大きな予算を伴うものなどもあり、対応しきるには時間がかかるものもありますが、学勢調査は学生の意見を大学側に伝える大きな役割を果たしています。皆さんのご協力をお願いします。
+        </p>
+        <p class="c-paragraph" style="text-align: right;">学勢調査2026 WG主査　鍵直樹</p>
+      </div>
+    </div>
+    <div class="c-pickupContents__image">
+      <figure class="c-image c-image--fullWidth">
+        <img src="assets/img/logo_studentsurvey.png" width="100" height="100" alt="Logo"/>
+      </figure>
+    </div>
+  </div>
+</div>
+
+    <!-- 新着ニュース（未リリース） -->
+<?php
+// $dir = __DIR__ . '/news/posts/';
+// $files = glob($dir . '*.md');
+// rsort($files); // 新しい順
+// $files = array_slice($files, 0, 3); // 最新3件だけ取得
+
+// echo "<h1>お知らせ一覧</h1><ul class='c-entryList'>";
+// foreach ($files as $file) {
+//     $content = file_get_contents($file);
+
+//     // メタ情報抽出
+//     preg_match('/title:\s*(.+)/', $content, $m1);
+//     preg_match('/date:\s*(.+)/', $content, $m2);
+
+//     $title = $m1[1] ?? basename($file);
+//     $date  = $m2[1] ?? '';
+//     $dt = new DateTime($date);
+//     $jpDate = $dt->format('Y年m月d日');
+
+//     $id = urlencode(basename($file));
+//     echo <<<HTML
+//      <li class='c-entryList__item'>
+//     <a href='news/view.php?id=$id' class='c-entryList__link'>
+//       <div class='c-entryList__date'>
+//         <time class='c-entryList__dateTime' datetime='$date'>
+//           $jpDate
+//         </time>
+//       </div>
+//       <div class='c-entryList__body'>
+//         <div class='c-entryList__text'>
+//           $title
+//         </div>
+//         <svg class='c-entryList__icon icon' aria-hidden='true' role='img'>
+//           <use xlink:href='/assets/img/sprite.svg#chevron_right'></use>
+//         </svg>
+//       </div>
+//     </a>
+//     </li>
+//     HTML;
+// }
+// echo "</ul>";
+?>
+
+
+<!--スタッフ募集-->
+<div class="c-heading c-heading--h2">
+<div class="c-heading__inner">
+<h2 class="c-heading__label" id="staff">学勢調査2026 学生スタッフ募集中</h2>
+<p class="c-heading__lead">
+  学勢調査の活動に興味がある・学生スタッフとして活動してみたい方は、下記アドレスまでご連絡ください。
+東京科学大学の学生であれば学年・所属課程等は問いません。活動に対して薄謝をお支払いします。<br>
+なお、学生スタッフとして活動を開始するにあたり学勢調査教職員WGの面接があります。
+以下の申込書に必要事項をご記入の上、応募フォームか以下のメールからご応募ください。<br>
+<small>※<strong>学勢調査2026</strong>は理工学系のみでの実施となりますが、理工学系学生だけでなく<u>医歯学系学生も学生スタッフとして</u>活動にご参加いただけます。<br>
+※<strong>学勢調査2028</strong>から両学系を対象とする全学調査として実施予定です。</small>
+</p>
+</div>
+<div class="c-heading--h3">
+<h3 class="c-heading__label">活動内容</h3>
+<p class="c-paragraph">
+  月1〜3回程度のミーティングを行います。
+ミーティングでは、設問案や提言作成の作業分担、広報活動についての話し合い、進捗スケジュールの確認などを行います。
+さらに、学修や施設、サービスなど、設問や提言のジャンルごとに班に分かれ、より細かい設問や提言の確認、調整も実施しています。<br>
+また、各自での作業として、設問案の作成、調査結果の分析、提言書の作成や調査の広報資料作成などがあります。<br>
+現在は、学勢調査2026に向けた設問作成を中心に行っています。
+</p>
+</div>
+<div class="c-heading--h3">
+<h3 class="c-heading__label">応募方法</h3>
+<p class="c-paragraph">
+学生スタッフとして活動を開始するにあたり学勢調査教職員WGの面接があります。
+以下の申込書に必要事項をご記入の上、応募フォームか以下のメールからご応募ください。
+</p>
+<p class="c-paragraph c-articleContents__link">
+<a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2026application.docx" class="c-link c-utilityLink">
+申請書（Word形式）
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#pdf"></use>
+</svg></a></p>
+<p class="c-paragraph c-articleContents__link">
+<a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2026application.pdf" class="c-link c-utilityLink">
+申請書（PDF形式）
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#pdf"></use>
+</svg></a></p>
+<p class="c-paragraph c-articleContents__link">
+<a target="_blank" href="mailto:studentsurvey@ssc.isct.ac.jp" class="c-link c-utilityLink">
+studentsurvey@ssc.isct.ac.jp
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="mail">
+<use xlink:href="assets/img/sprite.svg#mail"></use>
+</svg></a></p>
+</div>
+</div>
+
+<div class="c-buttonGroup">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSd89pmP_DgFuZaGS4RXO5h2BPOVJ4cpQDsYeHnI4RwB9pKBRQ/viewform" class="c-button c-button--sizeM c-button--primary">
+    <span class="c-button__label">応募フォーム</span>
+    <svg class="c-button__icon c-button__icon--right icon" aria-hidden="true" role="img">
+      <use xlink:href="assets/img/sprite.svg#chevron_right"></use>
+    </svg>
+  </a>
+</div>
+
+
+<div class="c-heading c-heading--h2">
+<div class="c-heading__inner">
+<h2 class="c-heading__label">学勢調査2024</h2>
+</div>
+</div>
+<p class="c-paragraph">
+  2024年6月24日から2024年7月24日までの1カ月間に教務Webシステムを通じて、東京工業大学（現東京科学大学理工学系）に所属する全学生を対象にアンケート調査を実施しました。
+  その後、学生スタッフによりアンケート結果の分析と提言の策定が行われました。<br>
+  2025年3月28日には、学勢調査2024提言書を理事長/学長に奉呈しました。奉呈式の詳しい様子は
+  <a target="_blank" href="https://www.isct.ac.jp/ja/news/k3o6hi6mbfy4">大学HP</a>よりご覧いただけます。<br>
+  提言書は、
+  <a href="#reports">当ページ</a>にて公開しております。日本語で書かれたPDF形式のものと、翻訳等が容易に可能なHTML形式のものを公開しています。
+</p>
+
+<div class="c-articleContents">
+<div class="grid grid--justifyCenter grid--dirRowReverse">
+<div class="grid__col grid__col--span6 md:grid__col--span12">
+<div class="c-articleContents__body">
+  <p class="c-paragraph c-paragraph--copyM c-articleContents__copy">
+    提言書奉呈式
+  </p>
+  <p class="c-paragraph c-articleContents__text">
+    2025年3月28日、学勢調査2024提言書を理事長/学長に奉呈しました。
+  </p>
+<p class="c-paragraph c-articleContents__link">
+<a target="_blank" href="https://www.isct.ac.jp/ja/news/k3o6hi6mbfy4" class="c-link c-utilityLink">
+詳細（大学ホームページ）
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></p>
+</div>
+</div>
+
+<div class="grid__col grid__col--span6 md:grid__col--span12">
+<section class="splide c-carousel c-carousel--default" aria-label="カルーセルの概要" data-js-carousel="1" data-js-carousel-auto="true" data-js-carousel-loop="true" data-js-carousel-pagination="true"><div class="splide__track">
+<ul class="splide__list"><li class="splide__slide"><div class="c-image"><picture><img src="assets/img/hotei2024_pic.webp" width="960" height="540" alt="学勢調査2024 提言書奉呈式">
+</picture></div></li><li class="splide__slide"><div class="c-image"><picture><img src="assets/img/hotei2024_discuss.webp" width="960" height="540" alt="提言書の内容についての意見交換">
+</picture></div></li><li class="splide__slide"><div class="c-image"><picture><img src="assets/img/ad2024.webp" width="960" height="540" alt="提言書完成の報告">
+</picture></div></li></ul>
+</div>
+<div class="c-carousel__controller">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21"><path d="m16.84 10.91-6.838-6.838-1.484 1.463 4.332 4.333H3.333v2.083h9.517l-4.332 4.332 1.484 1.463 6.837-6.837Z"/></svg>
+</button>
+</div>
+<div class="splide__controls"><button class="splide__toggle is-active" type="button" aria-controls="toggle-track" aria-label="Pause autoplay">
+<svg class="splide__toggle__play" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m22 12-20 11v-22l10 5.5z"></path>
+</svg>
+<svg class="splide__toggle__pause" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m2 1v22h7v-22zm13 0v22h7v-22z"></path>
+</svg>
+</button>
+<ul class="splide__pagination"></ul>
+</div>
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--next">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21"><path d="m16.84 10.91-6.838-6.838-1.484 1.463 4.332 4.333H3.333v2.083h9.517l-4.332 4.332 1.484 1.463 6.837-6.837Z"/></svg>
+</button>
+</div>
+</div>
+</section>
+</div>
+
+</div></div>
+
+
+<div class="c-heading c-heading--h3">
+<div class="c-heading__inner">
+<h3 class="c-heading__label" id="reports">過去の学勢調査</h3>
+<p class="c-heading__lead">
+  学勢調査は、2005年から開始し、2008年より1年おきに開催されてきました。各学勢調査の結果とそれに基づく提言は以下のリンクからご覧いただけます。
+  提言に対する大学の対応についても以下のリンクからご確認いただけます。
+</p>
+</div>
+<div class="c-importantNotice">
+  <div class="c-importantNotice__header">
+    <h2 class="c-importantNotice__heading">お願い</h2>
+  </div>
+  <div class="c-importantNotice__body">
+    <p class="c-paragraph c-paragraph--sizeM">
+      学勢調査のデータを利用する際には、<u>学内外に関わらず</u>、
+      事前に<a href="#inquiry">大岡山学生支援センター 未来人材育成支援室（学生活動支援窓口）</a>へご連絡ください
+    </p>
+  </div>
+</div>
+<div class="c-table c-table--fixed c-table--firstQuarter">
+<table class="c-table__content">
+  <tbody class="c-table__body">
+    <tr>
+      <th class="c-table__headCell">年度</th>
+      <td style="text-align: center;">提言書</td>
+      <td style="text-align: center;">大学の対応</td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2024 &nbsp;<span style="font-weight: bold;color:#f02b2b;"><i>NEW!!</i></span></th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2024/2024_gakusei_teigensho.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2024/teigensho/index.html" class="c-link c-utilityLink">
+        提言書（HTML形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#new_window"></use>
+        </svg></a></p>
+      </td>
+      <td>
+        2026年1月頃公開予定
+        <!-- <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.isct.ac.jp/ja/news/k3o6hi6mbfy4" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.isct.ac.jp/ja/news/k3o6hi6mbfy4" class="c-link c-utilityLink">
+        Science Tokyo's Response (PDF format)
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p> -->
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2022</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2022/2022_gakusei_teigensho.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2022/gakuseichosa2022_houkokusyo_ver3.pdf" class="c-link c-utilityLink">
+        追加調査提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2022/gakuseichosa2022_daigakunotaio.pdf" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2022/Responses%20to%20Student%20Proposals_2022.pdf" class="c-link c-utilityLink">
+        Tokyo Tech's Response (PDF format)
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2020</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2020/2020_gakusei_teigensyo.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2020/2020_gakusei_follow.pdf" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2020/2020_gakusei_follow_e.pdf" class="c-link c-utilityLink">
+        Tokyo Tech's Response (PDF format)
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2018</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2018/2018_gakusei_teigensyo.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2018/2018_gakusei_follow.pdf" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2016</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2016/2016_gakusei_teigensyo.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2016/2016_gakusei_follow.pdf" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2014</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2014/2014_gakusei_teigensyo.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2014/follow.pdf" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2014/follow_en.pdf" class="c-link c-utilityLink">
+        Tokyo Tech's Response (PDF format)
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2012</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2012/2012_gakusei_teigensyo.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2012/follow.pdf" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2010</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2010/2010_gakusei_teigensyo.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2010/index.html" class="c-link c-utilityLink">
+        提言書（HTML形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#new_window"></use>
+        </svg></a></p>
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2010/follow.html" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2008</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2008/2008_gakusei_teigensyo.pdf" class="c-link c-utilityLink">
+        提言書（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2008/index.html" class="c-link c-utilityLink">
+        提言書（HTML形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#new_window"></use>
+        </svg></a></p>
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2008/followgakumu.html" class="c-link c-utilityLink">
+        大学の対応（PDF形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#pdf"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+    <tr>
+      <th class="c-table__headCell">学勢調査2005</th>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2005/index.html" class="c-link c-utilityLink">
+        提言書（HTML形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#new_window"></use>
+        </svg></a></p>
+
+      </td>
+      <td>
+        <p class="c-paragraph c-articleContents__link">
+        <a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2005/follow.html" class="c-link c-utilityLink">
+        大学の対応（HTML形式）
+        <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+        <use xlink:href="assets/img/sprite.svg#new_window"></use>
+        </svg></a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+<div class="c-heading c-heading--h2">
+<div class="c-heading__inner">
+<h2 class="c-heading__label" id="member">メンバー</h2>
+</div>
+<div class="c-heading--h3">
+<h3 class="c-heading__label">学勢調査2026 学生スタッフ</h3>
+<p class="c-paragraph">
+  松本淳弥（代表）、吉村亮哉（副代表）、東 翼（副代表）、飯干成美、大河原早紀、知念優、永岡由之、野村彩乃、長谷川義人、山崎彩佳、吉田拓暉
+</p>
+</div>
+  <div class="c-heading--h5">
+    <h5 class="c-heading__label">各種SNS</h5>
+<dl class="c-definitionList c-contactList__data">
+<div class="c-definitionList__item">
+  <dt class="c-definitionList__term">
+  <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="X">
+  <use xlink:href="assets/img/sprite.svg#BrandX"></use>
+  </svg></dt>
+  <dd class="c-definitionList__description">
+  <p class="c-paragraph c-articleContents__link">
+  <a target="_blank" href="https://twitter.com/gakuseichousa" class="c-link c-utilityLink">
+  @gakuseichousa
+  <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+  <use xlink:href="assets/img/sprite.svg#new-window"></use>
+  </svg></a></p>
+  <a class="c-link" href=""></a>
+</dd></div>
+<div class="c-definitionList__item">
+  <dt class="c-definitionList__term">
+  <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="Instagram">
+  <use xlink:href="assets/img/sprite.svg#BrandInstagram"></use>
+  </svg></dt>
+  <dd class="c-definitionList__description">
+  <p class="c-paragraph c-articleContents__link">
+  <a target="_blank" href="https://www.instagram.com/studentsurvey_sciencetokyo/" class="c-link c-utilityLink">
+  @studentsurvey_sciencetokyo
+  <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+  <use xlink:href="assets/img/sprite.svg#new-window"></use>
+  </svg></a></p>
+  <a class="c-link" href=""></a>
+</dd></div>
+<!-- <div class="c-definitionList__item">
+  <dt class="c-definitionList__term">
+  <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="Facebook">
+  <use xlink:href="assets/img/sprite.svg#BrandFacebook"></use>
+  </svg></dt>
+  <dd class="c-definitionList__description">
+  <p class="c-paragraph c-articleContents__link">
+  <a target="_blank" href="https://ja-jp.facebook.com/gakuseichousa/" class="c-link c-utilityLink">
+  @gakuseichousa
+  <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+  <use xlink:href="assets/img/sprite.svg#new-window"></use>
+  </svg></a></p>
+  <a class="c-link" href=""></a>
+</dd></div> -->
+</dl></div>
+
+<div class="c-heading--h3">
+<h3 class="c-heading__label">大岡山学生支援センター自律支援実施委員会　学勢調査2026 教職員WG</h3>
+<p class="c-paragraph">
+  鍵直樹（建築学系・主査）、伊東幸子（学生支援センター）、山田恵美子（学生支援センター）、
+長谷川純（総合研究院）、弓山達也（リベラルアーツ研究教育院）、猪原健弘（リベラルアーツ研究教育院）、
+高田純（保健管理センター）、太田絵里（アントレプレナーシップ教育機構）、
+田中功一（学生支援課）、岡村純（学生支援課）
+</p>
+</div>
+</div>
+
+<div class="c-heading c-heading--h3">
+<div class="c-heading__inner">
+<h3 class="c-heading__label" id="inquiry">お問い合わせ</h3>
+</div>
+</div>
+<div class="c-contactList">
+<div class="grid grid--cols1 sm:grid--cols1">
+<div class="grid__col">
+<div class="c-contactList__item">
+<p class="c-paragraph c-contactList__department">大岡山学生支援センター未来人材育成支援室（学生活動支援窓口）</p>
+<dl class="c-definitionList c-contactList__data">
+<div class="c-definitionList__item">
+<dt class="c-definitionList__term">住所</dt><dd class="c-definitionList__description">
+東京都目黒区大岡山2丁目12-1<br>
+大岡山キャンパスTaki Plaza地下１階
+</dd></div>
+<div class="c-definitionList__item">
+<dt class="c-definitionList__term">Tel</dt><dd class="c-definitionList__description">
+<a class="c-link" href="tel:03-5734-7629">03-5734-7629（内線：7629）</a>
+</dd></div>
+<div class="c-definitionList__item">
+<dt class="c-definitionList__term">Email</dt><dd class="c-definitionList__description">
+<a class="c-link" href="mailto:studentsurvey@ssc.isct.ac.jp">studentsurvey@ssc.isct.ac.jp</a><br>
+<a class="c-link" href="mailto:st-initiativesupport@ssc.isct.ac.jp">st-initiativesupport@ssc.isct.ac.jp</a>
+</dd></div>
+<div class="c-definitionList__item">
+<dt class="c-definitionList__term">URL</dt><dd class="c-definitionList__description">
+<a class="c-link" href="https://www.siengp.titech.ac.jp/ScienceTokyo/">https://www.siengp.titech.ac.jp/ScienceTokyo/</a>
+</dd></div></dl>
+</div>
+</div>
+</div>
+</div>
+
+<!-- /.contentArea__bottom -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /.contentArea -->
+<aside class="contentFooter">
+<div class="container">
+<div class="c-heading c-heading--h2">
+<div class="c-heading__inner">
+<h2 class="c-heading__label">関連コンテンツ</h2>
+</div>
+</div>
+<ul class="c-linkList c-linkList--related">
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.titech.ac.jp/student-support/students/extracurricular/student-survey" class="c-link c-utilityLink c-linkList__link">
+学勢調査（大学HP）
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.siengp.titech.ac.jp/ScienceTokyo/" class="c-link c-utilityLink c-linkList__link">
+大岡山学生支援センター未来人材育成支援室（学生活動支援）ホームページ
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.isct.ac.jp/ja" class="c-link c-utilityLink c-linkList__link">
+東京科学大学ホームページ
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+</ul>
+
+</div>
+<!-- /.container -->
+</aside>
+<!-- /.contentFooter -->
+</main>
+
+<footer class="g-footer">
+
+<div class="c-siteFooter">
+<div class="c-siteFooter__inner">
+<div class="c-siteFooter__title">
+<div class="c-siteFooter__logo">
+<svg width="307" height="63" viewBox="0 0 307 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M45.0181 1.86328C26.1988 1.86328 10.5288 7.30074 1.72862 14.6712C1.22706 15.1004 0.870117 15.6724 0.870117 16.4595V30.0545C0.870117 29.769 1.08429 29.5539 1.51446 29.196C13.6067 19.4652 29.3481 16.5309 45.0181 16.5309V1.86328Z" fill="white"/>
+<path d="M45.0181 46.3402V32.7031C45.0181 33.061 44.3738 33.2038 43.3725 33.2752C27.1296 34.2773 11.6023 39.2855 0.870117 46.9415V62.9692C10.8509 56.0793 25.3521 50.176 39.1056 48.2284C39.2749 48.2073 42.6348 47.7167 43.0549 47.6527C43.5665 47.5749 44.6255 47.4614 44.9339 46.7914C44.9989 46.6514 45.019 46.4665 45.0181 46.3402Z" fill="white"/>
+<path d="M45.0181 32.7028C45.0181 32.345 44.6603 31.9871 44.0873 31.5579C36.6097 26.3438 27.2376 22.6508 16.4367 20.9219C11.0816 22.8631 6.04128 25.553 1.51446 29.1966C1.08429 29.5544 0.870117 29.7695 0.870117 30.0551C0.870117 30.3415 1.01289 30.4138 1.58585 30.4852C8.63419 31.2357 16.8257 33.1056 24.3609 36.3483C30.4043 34.7338 36.8303 33.6785 43.3725 33.2749C44.3738 33.2035 45.0181 33.0607 45.0181 32.7028Z" fill="#7F96C2"/>
+<path d="M68.0706 13.9676H66.0424V1.86449H68.0706V13.9676ZM70.8264 5.08978H72.6651C72.6999 5.47143 72.7173 6.06086 72.7173 6.52853H72.7521C73.3058 5.48883 74.2943 4.88203 75.4914 4.88203C77.7805 4.88203 78.5777 6.44251 78.5777 8.83496V13.9676H76.6703V9.63303C76.6703 7.83 76.5486 6.49468 74.9716 6.49468C74.2247 6.49468 73.5658 6.97976 73.1676 7.70828C72.9077 8.19336 72.7869 8.86973 72.7869 9.84081V13.9676H70.896V7.77786C70.896 6.87633 70.896 5.94003 70.8264 5.08978ZM80.6049 13.7251L80.7267 12.0777C81.4552 12.4767 82.2002 12.6671 82.8757 12.6671C83.7086 12.6671 84.3859 12.2854 84.3859 11.5752C84.3859 10.9162 84.0042 10.6215 82.6679 10.0495C81.1248 9.3905 80.5528 8.74801 80.5528 7.53438C80.5528 5.88696 81.8369 4.88203 83.7259 4.88203C84.5067 4.88203 85.2517 5.00283 85.842 5.24539L85.6681 6.80678C85.0091 6.47728 84.4023 6.35556 83.7781 6.35556C83.0157 6.35556 82.4254 6.71983 82.4254 7.37881C82.4254 8.03778 82.8409 8.29771 84.0042 8.74801C85.5464 9.3731 86.2923 10.066 86.2923 11.4187C86.2923 13.2217 84.9231 14.1763 82.9974 14.1763C82.1307 14.1763 81.3847 14.0372 80.6049 13.7251ZM88.8221 11.0206V6.6164H87.2451V5.10718H88.8395V3.13026L90.6599 2.50606V5.10718H92.8281V6.6164H90.6599V10.4824C90.6599 11.9038 90.885 12.5637 91.9952 12.5637C92.3247 12.5637 92.6203 12.4941 92.8803 12.3898L92.9325 13.9329C92.5334 14.072 92.0474 14.1589 91.5266 14.1589C89.4646 14.1589 88.8221 13.0139 88.8221 11.0206ZM96.7975 3.44236H94.7684V1.41418H96.7975V3.44236ZM96.7463 13.9676H94.8206V5.08978H96.7463V13.9676ZM100.057 11.0206V6.6164H98.4789V5.10718H100.074V3.13026L101.895 2.50606V5.10718H104.063V6.6164H101.895V10.4824C101.895 11.9038 102.121 12.5637 103.23 12.5637C103.559 12.5637 103.854 12.4941 104.114 12.3898L104.166 13.9329C103.767 14.072 103.282 14.1589 102.762 14.1589C100.698 14.1589 100.057 13.0139 100.057 11.0206ZM105.916 10.6737V5.08978H107.807V9.58088C107.807 11.4187 108.049 12.5463 109.524 12.5463C110.823 12.5463 111.673 11.1935 111.673 9.59826V5.08978H113.58V11.1414C113.58 12.2516 113.615 13.2217 113.684 13.9676H111.882C111.83 13.6034 111.795 13.1357 111.795 12.5637H111.76C111.326 13.4826 110.39 14.1763 108.899 14.1763C107.079 14.1763 105.916 12.8584 105.916 10.6737ZM116.839 11.0206V6.6164H115.261V5.10718H116.855V3.13026L118.677 2.50606V5.10718H120.845V6.6164H118.677V10.4824C118.677 11.9038 118.903 12.5637 120.011 12.5637C120.341 12.5637 120.636 12.4941 120.896 12.3898L120.948 13.9329C120.549 14.072 120.063 14.1589 119.544 14.1589C117.48 14.1589 116.839 13.0139 116.839 11.0206ZM122.196 9.47745C122.196 6.73721 123.861 4.88203 126.323 4.88203C128.664 4.88203 130.016 6.35556 130.016 9.51131C130.016 9.75386 129.999 9.92776 129.981 10.1007H124.137C124.189 11.6438 125.266 12.5984 126.876 12.5984C127.831 12.5984 128.612 12.3724 129.357 11.9221L129.426 13.6381C128.681 14.0024 127.727 14.1763 126.704 14.1763C123.895 14.1763 122.196 12.4245 122.196 9.47745ZM126.27 6.32078C125.144 6.32078 124.259 7.08411 124.137 8.67936H128.127C128.127 7.06671 127.38 6.32078 126.27 6.32078ZM135.632 9.52871C135.632 6.75461 137.452 4.88203 140.053 4.88203C142.655 4.88203 144.475 6.75461 144.475 9.52871C144.475 12.3028 142.655 14.1763 140.053 14.1763C137.452 14.1763 135.632 12.3028 135.632 9.52871ZM142.464 9.52871C142.464 7.63873 141.527 6.44251 140.053 6.44251C138.58 6.44251 137.642 7.63873 137.642 9.52871C137.642 11.4187 138.58 12.6149 140.053 12.6149C141.527 12.6149 142.464 11.4187 142.464 9.52871ZM145.566 6.6164V5.10718H147.438V4.37863C147.438 2.08964 148.254 0.789062 150.368 0.789062C150.837 0.789062 151.253 0.841237 151.635 0.945587L151.478 2.52346C151.202 2.41911 150.924 2.36694 150.612 2.36694C149.658 2.36694 149.328 2.93896 149.328 4.34386V5.10718H151.513V6.6164H149.328V13.9676H147.438V6.6164H145.566ZM78.3955 24.1131L78.0249 27.9525C76.2063 27.2112 74.7583 26.9421 73.3434 26.9421C70.885 26.9421 69.3355 27.9855 69.3355 29.6027C69.3355 31.0506 70.1107 31.9594 73.5127 33.206C77.7896 34.7555 79.6082 36.7754 79.6082 40.2442C79.6082 44.825 76.3747 47.5863 70.9189 47.5863C68.7296 47.5863 66.6758 47.2504 64.7556 46.5758L65.194 42.4334C67.1471 43.41 69.0325 43.7807 70.6498 43.7807C73.2427 43.7807 74.859 42.7364 74.859 40.851C74.859 39.0663 73.8824 38.1227 70.4136 36.8093C66.3051 35.2946 64.5542 33.4083 64.5542 30.074C64.5542 25.8978 67.8876 23.271 72.8043 23.271C74.859 23.271 76.5769 23.5063 78.3955 24.1131ZM99.309 42.568L99.4435 46.6436C98.1302 47.1488 96.3784 47.4178 94.46 47.4178C87.4208 47.4178 83.0423 43.0402 83.0423 35.4291C83.0423 27.817 87.4208 23.4395 94.1909 23.4395C96.1093 23.4395 97.5911 23.574 99.309 24.2476L99.039 28.3223C97.5572 27.548 96.2786 27.2789 94.5268 27.2789C90.6196 27.2789 88.0606 29.7711 88.0606 35.2946C88.0606 40.851 90.7551 43.4777 94.5607 43.4777C96.2447 43.4777 97.6597 43.2755 99.309 42.568ZM108.671 47.1826H103.957V23.6747H108.671V47.1826ZM114.329 47.1826V23.6747H127.699V27.5818H118.977V33.206H127.261V37.0793H118.977V43.2416H127.901V47.1826H114.329ZM146.187 42.1644L145.985 23.6747H150.263V47.1826H144.302L136.657 28.5923H136.589L136.791 47.1826H132.548V23.6747H138.577L146.154 42.1644H146.187ZM170.906 42.568L171.041 46.6436C169.728 47.1488 167.977 47.4178 166.057 47.4178C159.019 47.4178 154.64 43.0402 154.64 35.4291C154.64 27.817 159.019 23.4395 165.787 23.4395C167.707 23.4395 169.189 23.574 170.906 24.2476L170.637 28.3223C169.155 27.548 167.875 27.2789 166.124 27.2789C162.218 27.2789 159.658 29.7711 159.658 35.2946C159.658 40.851 162.352 43.4777 166.157 43.4777C167.842 43.4777 169.256 43.2755 170.906 42.568ZM175.553 47.1826V23.6747H188.923V27.5818H180.201V33.206H188.485V37.0793H180.201V43.2416H189.125V47.1826H175.553ZM215.999 23.6747V27.6825L209.567 27.6496V47.1826H204.785V27.6496L198.352 27.6825V23.6747H215.999ZM239.877 35.4291C239.877 43.1748 235.599 47.5863 228.864 47.5863C222.095 47.5863 217.818 43.1748 217.818 35.4291C217.818 27.6825 222.095 23.271 228.864 23.271C235.599 23.271 239.877 27.6825 239.877 35.4291ZM222.87 35.4291C222.87 41.2217 225.226 43.9152 228.864 43.9152C232.502 43.9152 234.859 41.2217 234.859 35.4291C234.859 29.6356 232.502 26.9421 228.864 26.9421C225.226 26.9421 222.87 29.6356 222.87 35.4291ZM249.037 35.765V47.1826H244.322V23.6747H249.037V33.9803H249.103L256.042 23.6747H261.532L253.516 34.6539L263.384 47.1826H257.456L249.103 35.765H249.037ZM262.676 23.6747H267.93L272.78 33.6435H272.847L277.83 23.6747H282.916L275.137 37.8536V47.1826H270.421V37.9204L262.676 23.6747ZM306.053 35.4291C306.053 43.1748 301.775 47.5863 295.041 47.5863C288.271 47.5863 283.994 43.1748 283.994 35.4291C283.994 27.6825 288.271 23.271 295.041 23.271C301.775 23.271 306.053 27.6825 306.053 35.4291ZM289.046 35.4291C289.046 41.2217 291.403 43.9152 295.041 43.9152C298.677 43.9152 301.035 41.2217 301.035 35.4291C301.035 29.6356 298.677 26.9421 295.041 26.9421C291.403 26.9421 289.046 29.6356 289.046 35.4291Z" fill="white"/>
+</svg>
+</div>
+<p class="c-siteFooter__label">学勢調査</p>
+</div>
+
+</div>
+</div>
+<div class="c-globalFooter">
+<div class="c-globalFooter__inner">
+
+<p class="c-globalFooter__copy">&copy; Institute of Science Tokyo. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<a class="c-pageTop" href="#top" aria-label="ページトップへ戻る" data-js-pagetop>
+<svg class="icon" role="img" aria-hidden="true">
+<use xlink:href="assets/img/sprite.svg#arrow_up"></use>
+</svg>
+</a>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
