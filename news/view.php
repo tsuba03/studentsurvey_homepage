@@ -15,7 +15,7 @@ $content = file_get_contents($file);
 preg_match('/title:\s*(.+)/', $content, $m1);
 preg_match('/date:\s*(.+)/', $content, $m2);
 preg_match('/author:\s*(.+)/', $content, $m3);
-preg_match('/lead:\s*(.+)/', $lead, $m4);
+preg_match('/lead:\s*(.+)/', $content, $m4);
 
 $title  = $m1[1] ?? '';
 $date   = $m2[1] ?? '';
@@ -105,381 +105,28 @@ $body = preg_replace('/^---.*?---\s*/s', '', $content, 1);
 <?php
 echo "<h1 class='c-heading__label'> $title </h1>";
 ?>
-</div>
-</div>
+
 <?php
 if ($date) echo "<div class='c-mediaHeading__meta'><p class='c-paragraph c-mediaHeading_publishDate'>$date 公開</p></div>";
 if ($lead) echo "<div class='c-mediaHeading__copy'><p class='c-paragraph c-paragraph--weightBold c-mediaHeading__copyText'> $lead </p></div>";
 ?>
 </div>
+</div>
+</div>
 <?php
 echo $Parsedown->text($body);
 ?>
-<div class="c-labelGroup c-mediaHeading__labels"><a href="#" class="c-label"><span class="c-label__text">タグテキスト</span></a><a href="#" class="c-label"><span class="c-label__text">タグテキスト</span></a><a href="#" class="c-label"><span class="c-label__text">タグテキスト</span></a></div>
 
-<div class="c-image c-image--sizeLL c-image--alignCenter"><img src="/studentsurvey/assets/img/img-campus.webp" width="1440" height="810" alt="Placeholder Image"></div>
-<p class="c-paragraph c-paragraph--copyM c-paragraph--weightRegular">キャッチコピーM　「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です</p>
-<p class="c-paragraph c-paragraph--alignRight">発表組織名称テキストが入ります。<br>発表組織名称テキストが入ります。</p>
-<p class="c-paragraph">本文テキスト 「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</p>
-<div class="c-heading c-heading--h2">
-<div class="c-heading__inner">
-<h2 class="c-heading__label">見出しテキスト h2「自然界はどのようにしてできて</h2>
-<p class="c-heading__lead">リード文「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう?」という</p>
-</div>
-</div>
-<ul class="c-list"><li class="c-list__item">
-<span class="c-list__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li><li class="c-list__item">
-<span class="c-list__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li><li class="c-list__item">
-<span class="c-list__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li><li class="c-list__item">
-<span class="c-list__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li><li class="c-list__item">
-<span class="c-list__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li><li class="c-list__item">
-<span class="c-list__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li></ul>
-<div class="c-heading c-heading--h2">
-<div class="c-heading__inner">
-<h2 class="c-heading__label">見出しテキスト h2「自然界はどのようにしてできて</h2>
-</div>
-</div>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">見出しテキスト h3「自然界はどのようにしてできて</h3>
-<p class="c-heading__lead">リード文「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう?」という</p>
-</div>
-</div>
-<div class="c-image c-image--sizeLL"><img src="/studentsurvey/assets/img/img-campus.webp" width="1440" height="810" alt="Placeholder Image"></div>
-<div class="c-heading c-heading--h2">
-<div class="c-heading__inner">
-<h2 class="c-heading__label">見出しテキスト h2「自然界はどのようにしてできて</h2>
-</div>
-</div>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">見出しテキスト h3「自然界はどのようにしてできて</h3>
-<p class="c-heading__lead">リード文「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう?」という</p>
-</div>
-</div>
-<div class="c-image c-image--fullWidth c-image--alignCenter"><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt="Placeholder Image"></div>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">見出しテキスト h3「自然界はどのようにしてできて</h3>
-<p class="c-heading__lead">リード文「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう?」という</p>
-</div>
-</div>
-<div class="c-imageGroup">
-<div class="grid grid--cols2 sm:grid--cols1"><div class="grid__col"><figure class="c-image c-image--fullWidth"><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt=""><figcaption class="c-image__caption">© Caption Curabitur tempor quis eros</figcaption></figure>
-</div><div class="grid__col"><figure class="c-image c-image--fullWidth"><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt=""><figcaption class="c-image__caption">© Caption Curabitur tempor quis eros</figcaption></figure>
-</div></div>
-</div>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">見出しテキスト h3「自然界はどのようにしてできて</h3>
-</div>
-</div>
-<div class="c-articleContents">
-<div class="grid grid--justifyCenter grid--dirRowReverse">
-<div class="grid__col grid__col--span8 md:grid__col--span12">
-<div class="c-articleContents__body"><p class="c-paragraph c-paragraph--copyM c-articleContents__copy">キャッチコピー</p><p class="c-paragraph c-articleContents__text">本文テキスト 「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</p></div>
-</div><div class="grid__col grid__col--span4 md:grid__col--span12">
-<div class="c-articleContents__image">
-<figure class="c-image c-image--fullWidth"><picture><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt="">
-</picture><figcaption class="c-image__caption">© Caption Curabitur tempor quis eros</figcaption></figure>
-</div>
-</div></div>
-</div>
-<div class="c-articleContents">
-<div class="grid grid--justifyCenter grid--dirRow">
-<div class="grid__col grid__col--span8 md:grid__col--span12">
-<div class="c-articleContents__body"><p class="c-paragraph c-paragraph--copyM c-articleContents__copy">キャッチコピー</p><p class="c-paragraph c-articleContents__text">本文テキスト 「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</p></div>
-</div><div class="grid__col grid__col--span4 md:grid__col--span12">
-<div class="c-articleContents__image">
-<figure class="c-image c-image--fullWidth"><picture><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt="">
-</picture><figcaption class="c-image__caption">© Caption Curabitur tempor quis eros</figcaption></figure>
-</div>
-</div></div>
-</div>
-<div class="c-articleContents">
-<div class="grid grid--justifyCenter grid--dirRowReverse">
-<div class="grid__col grid__col--span8 md:grid__col--span12">
-<div class="c-articleContents__body"><p class="c-paragraph c-paragraph--copyM c-articleContents__copy">キャッチコピー</p><p class="c-paragraph c-articleContents__text">本文テキスト 「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</p></div>
-</div><div class="grid__col grid__col--span4 md:grid__col--span12">
-<div class="c-articleContents__image">
-<figure class="c-image c-image--fullWidth"><picture><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt="">
-</picture><figcaption class="c-image__caption">© Caption Curabitur tempor quis eros</figcaption></figure>
-</div>
-</div></div>
-</div>
-<div class="c-articleContents">
-<div class="grid grid--justifyCenter grid--dirRow">
-<div class="grid__col grid__col--span8 md:grid__col--span12">
-<div class="c-articleContents__body"><p class="c-paragraph c-paragraph--copyM c-articleContents__copy">キャッチコピー</p><p class="c-paragraph c-articleContents__text">本文テキスト 「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</p></div>
-</div><div class="grid__col grid__col--span4 md:grid__col--span12">
-<div class="c-articleContents__image">
-<figure class="c-image c-image--fullWidth"><picture><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt="">
-</picture><figcaption class="c-image__caption">© Caption Curabitur tempor quis eros</figcaption></figure>
-</div>
-</div></div>
-</div>
-<ol class="c-orderList c-orderList--notes"><li class="c-orderList__item">
-<span class="c-orderList__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li><li class="c-orderList__item">
-<span class="c-orderList__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li></ol>
-<ul class="c-linkList"><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_right"></use>
-</svg>
-</a></li><li class="c-linkList__item">
-<a target="_blank" href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト（外部リンク）
-<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#new_window"></use>
-</svg></a></li><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト（PDF）
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#pdf"></use>
-</svg>
-</a></li><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト（Word）
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#pdf"></use>
-</svg>
-</a></li></ul>
-<ol class="c-orderList"><li class="c-orderList__item">
-<span class="c-orderList__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li><li class="c-orderList__item">
-<span class="c-orderList__label">リスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</span>
-</li></ol>
-<p class="c-paragraph">本文テキスト 「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</p>
-<div class="c-table c-table--fixed c-table--firstQuarter">
-<table class="c-table__content"><tbody class="c-table__body"><tr><th class="c-table__headCell">テーブルデータ</th><td>テーブルデータ</td></tr><tr><th class="c-table__headCell">テーブルデータ</th><td>テーブルデータ</td></tr><tr><th class="c-table__headCell">テーブルデータ</th><td>テーブルデータ</td></tr><tr><th class="c-table__headCell">テーブルデータ</th><td>テーブルデータ</td></tr></tbody>
-</table>
-</div>
-<p class="c-paragraph">本文テキスト 「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</p>
-<div class="c-table c-table--fixed">
-<table class="c-table__content"><thead class="c-table__head">
-<tr><th>テーブルデータ</th><th>テーブルデータ</th><th>テーブルデータ</th><th>テーブルデータ</th><th>テーブルデータ</th></tr>
-</thead>
-<tbody class="c-table__body"><tr><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td></tr><tr><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td></tr><tr><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td><td>テーブルデータ</td></tr></tbody>
-</table>
-</div>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">見出しテキスト h3「自然界はどのようにしてできて</h3>
-</div>
-</div>
-<ul class="c-linkList c-linkList--related"><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_right"></use>
-</svg>
-</a></li><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心を
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_right"></use>
-</svg>
-</a></li><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト「自然界はどのようにしてできているのだろう?」という基本的な原理
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_right"></use>
-</svg>
-</a></li><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト「リンクテキスト「自然界はどのようにして
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#pdf"></use>
-</svg>
-</a></li><li class="c-linkList__item">
-<a target="_blank" href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト「自然界はどの
-<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#new_window"></use>
-</svg></a></li></ul>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">見出しテキスト h3「自然界はどのようにしてできて</h3>
-</div>
-</div>
-<div class="c-pickupContents"><div class="c-pickupContents__inner"><div class="c-pickupContents__body">
-<div class="c-pickupContents__title">
-<p class="c-pickupContents__heading">Pickupコンテンツ-キャッチコピー</p></div>
-<div class="c-pickupContents__description">
-<p class="c-paragraph">本文テキスト 「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。</p>
-</div><div class="c-pickupContents__button">
-<a target="" href="#" class="c-button">
-<span class="c-button__label">ボタン</span>
-<svg class="c-button__icon c-button__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_right"></use>
-</svg>
-</a>
-</div></div>
-<div class="c-pickupContents__image">
-<div class="c-image c-image--fullWidth"><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt="画像のalt"></div>
-</div></div></div>
-<div class="c-heading c-heading--h2">
-<div class="c-heading__inner">
-<h2 class="c-heading__label">見出しテキスト h2「自然界はどのようにしてできて</h2>
-</div>
-</div>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">見出しテキスト h3「自然界はどのようにしてできて</h3>
-<p class="c-heading__lead">リード文「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう?」という</p>
-</div>
-</div>
-<ul class="c-linkList"><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#arrow_right"></use>
-</svg>
-</a></li><li class="c-linkList__item">
-<a target="_blank" href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト
-<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#new_window"></use>
-</svg></a></li></ul>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">見出しテキスト h3「自然界はどのようにしてできて</h3>
-<p class="c-heading__lead">リード文「自然界はどのようにしてできているのだろう?」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう?」という</p>
-</div>
-</div>
-<ul class="c-linkList"><li class="c-linkList__item">
-<a href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト
-<svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#arrow_right"></use>
-</svg>
-</a></li><li class="c-linkList__item">
-<a target="_blank" href="#" class="c-link c-utilityLink c-linkList__link">
-リンクテキスト
-<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#new_window"></use>
-</svg></a></li></ul>
-<div class="c-heading c-heading--h2">
-<div class="c-heading__inner">
-<h2 class="c-heading__label">見出しテキスト h2「自然界はどのようにしてできて</h2>
-</div>
-</div>
-<div class="c-heading c-heading--h3">
-<div class="c-heading__inner">
-<h3 class="c-heading__label">人物名　name</h3>
-</div>
-</div>
-<div class="c-pickupContents"><div class="c-pickupContents__inner c-pickupContents__inner--imagePosRight"><div class="c-pickupContents__body">
-<div class="c-pickupContents__title">
-<p class="c-pickupContents__heading">キャッチコピー</p></div>
-<div class="c-pickupContents__description">
-<p class="c-paragraph">所属大学・企業<br>役職（学生の場合所属学院・学科など）</p>
-</div></div>
-<div class="c-pickupContents__image">
-<div class="c-image c-image--fullWidth"><img src="/studentsurvey/assets/img/img-campus.webp" width="960" height="540" alt="画像のalt"></div>
-</div></div></div>
-<div class="c-heading c-heading--h4">
-<div class="c-heading__inner">
-<h4 class="c-heading__label">見出しテキスト h4「自然界はどのようにしてできて</h4>
-<p class="c-heading__lead">」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう</p>
-</div>
-</div>
-<div class="c-heading c-heading--h4">
-<div class="c-heading__inner">
-<h4 class="c-heading__label">見出しテキスト h4「自然界はどのようにしてできて</h4>
-</div>
-</div>
-<div class="c-table c-table--firstQuarter">
-<table class="c-table__content"><tbody class="c-table__body"><tr><th class="c-table__headCell">テーブルデータ</th><td>テーブルデータ</td></tr><tr><th class="c-table__headCell">テーブルデータ</th><td>テーブルデータ</td></tr><tr><th class="c-table__headCell">テーブルデータ</th><td>テーブルデータ</td></tr><tr><th class="c-table__headCell">テーブルデータ</th><td>テーブルデータ</td></tr></tbody>
-</table>
-</div>
-<div class="c-heading c-heading--h4">
-<div class="c-heading__inner">
-<h4 class="c-heading__label">見出しテキスト h4「自然界はどのようにしてできて</h4>
-<p class="c-heading__lead">」という基本的な原理への興味や関心をモチベーションに、法則や論理を探究するのが理学です。「自然界はどのようにしてできているのだろう</p>
-</div>
-</div>
-<div class="c-updateHistory">
-<div class="c-updateHistory__header">
-<h2 class="c-updateHistory__heading">更新履歴</h2>
-</div>
-<div class="c-updateHistory__body">
-<ul class="c-list c-list--notes"><li class="c-list__item">
-<span class="c-list__label">2024年10月1日：記事更新の説明テキストが入ります。記事更新の説明テキストが入ります。記事更新の説明テキストが入ります。記事更新の説明テキストが入ります。記事更新の説明テキストが入ります。</span>
-</li><li class="c-list__item">
-<span class="c-list__label">記事更新の説明テキストが入ります。記事更新の説明テキストが入ります。記事更新の説明テキストが入ります。記事更新の説明テキストが入ります。記事更新の説明テキストが入ります。</span>
-</li></ul>
-</div>
-</div>
-<div class="c-heading c-heading--h2">
-<div class="c-heading__inner">
-<h2 class="c-heading__label">見出しテキスト h2「自然界はどのようにしてできて</h2>
-</div>
-</div>
-<div class="c-contactList">
-<div class="grid grid--cols1 sm:grid--cols1">
-<div class="grid__col">
-<div class="c-contactList__item"><p class="c-paragraph c-contactList__department">問い合わせ先組織名</p>
-<dl class="c-definitionList c-contactList__data">
-<div class="c-definitionList__item">
-<dt class="c-definitionList__term">住所</dt><dd class="c-definitionList__description">
-東京都目黒区大岡山2丁目12-1
-</dd></div>
-<div class="c-definitionList__item">
-<dt class="c-definitionList__term">Tel</dt><dd class="c-definitionList__description">
-<a class="c-link" href="tel:03-XXXX-XXXX">03-XXXX-XXXX</a>
-</dd></div>
-<div class="c-definitionList__item">
-<dt class="c-definitionList__term">Fax</dt><dd class="c-definitionList__description">
-<a class="c-link" href="tel:03-XXXX-XXXX">03-XXXX-XXXX</a>
-</dd></div>
-<div class="c-definitionList__item">
-<dt class="c-definitionList__term">Email</dt><dd class="c-definitionList__description">
-<a class="c-link" href="mailto:info-XXXX@isct.ac.jp">info-XXXX@isct.ac.jp</a>
-</dd></div></dl>
-</div>
-</div>
-<div class="grid__col">
-<div class="c-contactList__item"><p class="c-paragraph c-contactList__department">問い合わせ先組織名</p>
-<dl class="c-definitionList c-contactList__data">
-<div class="c-definitionList__item">
-<dt class="c-definitionList__term">住所</dt><dd class="c-definitionList__description">
-東京都目黒区大岡山2丁目12-1
-</dd></div>
-<div class="c-definitionList__item">
-<dt class="c-definitionList__term">Tel</dt><dd class="c-definitionList__description">
-<a class="c-link" href="tel:03-XXXX-XXXX">03-XXXX-XXXX</a>
-</dd></div>
-<div class="c-definitionList__item">
-<dt class="c-definitionList__term">Fax</dt><dd class="c-definitionList__description">
-<a class="c-link" href="tel:03-XXXX-XXXX">03-XXXX-XXXX</a>
-</dd></div>
-<div class="c-definitionList__item">
-<dt class="c-definitionList__term">Email</dt><dd class="c-definitionList__description">
-<a class="c-link" href="mailto:info-XXXX@isct.ac.jp">info-XXXX@isct.ac.jp</a>
-</dd></div></dl>
-</div>
-</div>
-</div>
-</div>
+
 <div class="contentArea__bottom">
 <div class="grid grid--justifyCenter">
 <div class="grid__col grid__col--span8 sm:grid__col--span8">
-<button class="c-button c-button--fixed">
+<a href="index.php" class="c-button c-button--fixed" >
 <svg class="c-button__icon c-button__icon--left icon" aria-hidden="true" role="img">
 <use xlink:href="/studentsurvey/assets/img/sprite.svg#arrow_left"></use>
 </svg>
-<span class="c-button__label">（上階層のページ名）へ</span>
-</button>
+<span class="c-button__label">ニュース一覧へ</span>
+</a>
 </div>
 </div>
 </div>
@@ -506,24 +153,6 @@ echo $Parsedown->text($body);
 <li class="c-linkList__item">
 <a target="_blank" href="https://www.siengp.titech.ac.jp/ScienceTokyo/" class="c-link c-utilityLink c-linkList__link">
 大岡山学生支援センター未来人材育成支援室（学生活動支援）ホームページ
-<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#new_window"></use>
-</svg></a></li>
-<li class="c-linkList__item">
-<a target="_blank" href="https://www.siengp.titech.ac.jp/ScienceTokyo/vg/index.html" class="c-link c-utilityLink c-linkList__link">
-VGホームページ
-<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#new_window"></use>
-</svg></a></li>
-<li class="c-linkList__item">
-<a target="_blank" href="https://www.siengp.titech.ac.jp/ScienceTokyo/peer/index.html" class="c-link c-utilityLink c-linkList__link">
-ピアサポーター（理工学系）ホームページ
-<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
-<use xlink:href="/studentsurvey/assets/img/sprite.svg#new_window"></use>
-</svg></a></li>
-<li class="c-linkList__item">
-<a target="_blank" href="https://www.siengp.titech.ac.jp/ScienceTokyo/flap/index.html" class="c-link c-utilityLink c-linkList__link">
-留学促進団体FLAPホームページ
 <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
 <use xlink:href="/studentsurvey/assets/img/sprite.svg#new_window"></use>
 </svg></a></li>

@@ -114,15 +114,15 @@
 </div></div>
     <!--ヘッダー下の目次-->
 <div class="c-utilityLinkGroup c-utilityLinkGroup--horizontal"><div class="c-utilityLinkGroup__item">
-<a href="#uptodate" class="c-link c-utilityLink">
-学勢調査2024
+<a href="#staff" class="c-link c-utilityLink">
+スタッフ募集
 <svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
 <use xlink:href="assets/img/sprite.svg#arrow_down"></use>
 </svg>
 </a>
 </div><div class="c-utilityLinkGroup__item">
-<a href="#staff" class="c-link c-utilityLink">
-スタッフ募集
+<a href="#uptodate" class="c-link c-utilityLink">
+学勢調査2024
 <svg class="c-link__icon c-link__icon--right icon" aria-hidden="true" role="img">
 <use xlink:href="assets/img/sprite.svg#arrow_down"></use>
 </svg>
