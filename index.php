@@ -252,13 +252,13 @@
 以下の申込書に必要事項をご記入の上、応募フォームか以下のメールからご応募ください。
 </p>
 <p class="c-paragraph c-articleContents__link">
-<a target="_blank" href="/studentsurvey/assets/file/application2025.docx" class="c-link c-utilityLink">
+<a target="_blank" href="assets/file/application2025.docx" class="c-link c-utilityLink">
 申請書（Word形式）
 <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
 <use xlink:href="assets/img/sprite.svg#pdf"></use>
 </svg></a></p>
 <p class="c-paragraph c-articleContents__link">
-<a target="_blank" href="/studentsurvey/assets/file/application2025.pdf" class="c-link c-utilityLink">
+<a target="_blank" href="assets/file/application2025.pdf" class="c-link c-utilityLink">
 申請書（PDF形式）
 <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
 <use xlink:href="assets/img/sprite.svg#pdf"></use>
