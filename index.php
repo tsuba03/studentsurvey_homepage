@@ -252,13 +252,13 @@
 以下の申込書に必要事項をご記入の上、応募フォームか以下のメールからご応募ください。
 </p>
 <p class="c-paragraph c-articleContents__link">
-<a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2026application.docx" class="c-link c-utilityLink">
+<a target="_blank" href="/studentsurvey/assets/file/application2025.docx" class="c-link c-utilityLink">
 申請書（Word形式）
 <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
 <use xlink:href="assets/img/sprite.svg#pdf"></use>
 </svg></a></p>
 <p class="c-paragraph c-articleContents__link">
-<a target="_blank" href="https://www.siengp.titech.ac.jp/gakuseichousa/2026application.pdf" class="c-link c-utilityLink">
+<a target="_blank" href="/studentsurvey/assets/file/application2025.pdf" class="c-link c-utilityLink">
 申請書（PDF形式）
 <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
 <use xlink:href="assets/img/sprite.svg#pdf"></use>
@@ -290,28 +290,27 @@ studentsurvey@ssc.isct.ac.jp
 <p class="c-paragraph">
   2024年6月24日から2024年7月24日までの1カ月間に教務Webシステムを通じて、東京工業大学（現東京科学大学理工学系）に所属する全学生を対象にアンケート調査を実施しました。
   その後、学生スタッフによりアンケート結果の分析と提言の策定が行われました。<br>
-  2025年3月28日には、学勢調査2024提言書を理事長/学長に奉呈しました。奉呈式の詳しい様子は
-  <a target="_blank" href="https://www.isct.ac.jp/ja/news/k3o6hi6mbfy4">大学HP</a>よりご覧いただけます。<br>
-  提言書は、
-  <a href="#reports">当ページ</a>にて公開しております。日本語で書かれたPDF形式のものと、翻訳等が容易に可能なHTML形式のものを公開しています。
-</p>
+ </p>
 
 <div class="c-articleContents">
 <div class="grid grid--justifyCenter grid--dirRowReverse">
 <div class="grid__col grid__col--span6 md:grid__col--span12">
 <div class="c-articleContents__body">
   <p class="c-paragraph c-paragraph--copyM c-articleContents__copy">
-    提言書奉呈式
+    学勢調査2024 提言書
   </p>
   <p class="c-paragraph c-articleContents__text">
-    2025年3月28日、学勢調査2024提言書を理事長/学長に奉呈しました。
+    2025年3月28日、学勢調査2024提言書を理事長/学長に奉呈しました。奉呈式の詳しい様子は
+    <a target="_blank" href="https://www.isct.ac.jp/ja/news/k3o6hi6mbfy4" class="c-link c-utilityLink">
+      大学HP
+    <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+    <use xlink:href="assets/img/sprite.svg#new_window"></use>
+    </svg></a>
+    よりご覧いただけます。<br>
+    提言書は、
+  <a href="#reports">当ページ</a>にて公開しております。
+  日本語で書かれたPDF形式のものと、翻訳等が容易に可能なHTML形式のものを公開しています。
   </p>
-<p class="c-paragraph c-articleContents__link">
-<a target="_blank" href="https://www.isct.ac.jp/ja/news/k3o6hi6mbfy4" class="c-link c-utilityLink">
-詳細（大学ホームページ）
-<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
-<use xlink:href="assets/img/sprite.svg#new_window"></use>
-</svg></a></p>
 </div>
 </div>
 
@@ -354,8 +353,9 @@ studentsurvey@ssc.isct.ac.jp
 <div class="c-heading__inner">
 <h3 class="c-heading__label" id="reports">過去の学勢調査</h3>
 <p class="c-heading__lead">
-  学勢調査は、2005年から開始し、2008年より1年おきに開催されてきました。各学勢調査の結果とそれに基づく提言は以下のリンクからご覧いただけます。
-  提言に対する大学の対応についても以下のリンクからご確認いただけます。
+  学勢調査は、2004年の試行を経て、2005年から本格実施となり、2008年から2年に一度実施しています。
+  各学勢調査の結果とそれに基づく提言は以下のリンクからご覧いただけます。
+  毎回、提言に対する「大学の対応」も調査しています。調査結果も以下のリンクからご確認いただけます。
 </p>
 </div>
 <div class="c-importantNotice">
