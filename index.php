@@ -738,25 +738,67 @@ studentsurvey@ssc.isct.ac.jp
 <div class="container">
 <div class="c-heading c-heading--h2">
 <div class="c-heading__inner">
-<h2 class="c-heading__label">関連コンテンツ</h2>
+<h2 class="c-heading__label">関連リンク</h2>
 </div>
 </div>
 <ul class="c-linkList c-linkList--related">
 <li class="c-linkList__item">
 <a target="_blank" href="https://www.titech.ac.jp/student-support/students/extracurricular/student-survey" class="c-link c-utilityLink c-linkList__link">
-学勢調査（大学HP）
+学勢調査 | 東京科学大学
 <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
 <use xlink:href="assets/img/sprite.svg#new_window"></use>
 </svg></a></li>
 <li class="c-linkList__item">
 <a target="_blank" href="https://www.siengp.titech.ac.jp/ScienceTokyo/" class="c-link c-utilityLink c-linkList__link">
-大岡山学生支援センター未来人材育成支援室（学生活動支援）ホームページ
+大岡山学生支援センター未来人材育成支援室（学生活動支援）
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.isct.ac.jp/ja/news/k3o6hi6mbfy4" class="c-link c-utilityLink c-linkList__link">
+学勢調査2024提言書 理事長・学長へ提出 | Science Tokyoニュース
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.titech.ac.jp/news/2023/066822" class="c-link c-utilityLink c-linkList__link">
+学勢調査2022の提言書 益学長へ提出 | 旧・東京工業大学
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.titech.ac.jp/news/2021/049786" class="c-link c-utilityLink c-linkList__link">
+学勢調査2020の提言書 益学長へ提出 | 旧・東京工業大学
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.titech.ac.jp/news/2019/044094" class="c-link c-utilityLink c-linkList__link">
+学勢調査2018の提言書　学長へ提出 | 旧・東京工業大学
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.titech.ac.jp/news/2017/038901" class="c-link c-utilityLink c-linkList__link">
+学勢調査2016の提言書、学長へ | 旧・東京工業大学
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.titech.ac.jp/news/2015/031769" class="c-link c-utilityLink c-linkList__link">
+学勢調査2014の提言書、学長へ | 旧・東京工業大学
+<svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
+<use xlink:href="assets/img/sprite.svg#new_window"></use>
+</svg></a></li>
+<li class="c-linkList__item">
+<a target="_blank" href="https://www.titech.ac.jp/news/2013/003718" class="c-link c-utilityLink c-linkList__link">
+学勢調査2012の提言書、学長へ | 旧・東京工業大学
 <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
 <use xlink:href="assets/img/sprite.svg#new_window"></use>
 </svg></a></li>
 <li class="c-linkList__item">
 <a target="_blank" href="https://www.isct.ac.jp/ja" class="c-link c-utilityLink c-linkList__link">
-東京科学大学ホームページ
+東京科学大学
 <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="新しいウインドウで開く">
 <use xlink:href="assets/img/sprite.svg#new_window"></use>
 </svg></a></li>
