@@ -85,6 +85,119 @@
 <!-- これで一応指定ページまで飛ぶのだけれど、アクロバットの拡張機能を使っているとリンクが効かない。
 その注意事項を載せておくのと、ページ数を載せておくことが吉 -->
 
+<form method="get" action="">
+  発行年: 
+  <div class="c-searchTool">
+    <fieldset class="c-searchTool__tagControls" data-js-taglist="">
+    <legend>提言年を選択</legend>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2024">2024年</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2022">2022年</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2020">2020年</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2018">2018年</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2016">2016年</label>
+    </fieldset>
+  </div>
+  
+  <br>
+  大分類:
+  <div class="c-searchTool">
+    <fieldset class="c-searchTool__tagControls" data-js-taglist="">
+    <legend>提言の分類を選択</legend>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="学修">学修</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="施設">施設</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="サービス">サービス</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="DE&I">DE&I</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="統合">統合</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="女子枠">女子枠</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="その他">その他</label>
+    </fieldset>
+  </div>
+  <br>
+  種類: 
+  <div class="c-searchTool">
+    <fieldset class="c-searchTool__tagControls" data-js-taglist="">
+    <legend>提言の分類を選択</legend>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="type[]" value="提言">提言</label>
+    <label class="c-searchTool__tagButton"><input type="checkbox" name="type[]" value="意見まとめ">意見まとめ</label>
+    </fieldset>
+  </div>
+  <br>
+  タイトル: 
+  <div class="c-search">
+  <div class="c-search__input">
+    <input class="c-input" type="search" id="search" placeholder="検索キーワードを入力">
+    <!-- <button class="c-search__submitBtn" type="submit" aria-label="送信"><svg class="icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#search"></use></svg></button> -->
+  </div>
+</div>
+<br>
+  <input type="submit" value="検索">
+</form>
+
+<?php
+$db = new PDO("sqlite:". __DIR__ . "/../assets/db/teigen.db");
+
+// 入力値取得
+$year = $_GET['year'] ?? [];
+$category = $_GET['category'] ?? [];
+$type = $_GET['type'] ?? [];
+$title = $_GET['title'] ?? '';
+
+// SQL 組み立て
+$sql = "SELECT Year, Category, Type, Title, Page, ID FROM teigen WHERE 1=1";
+$params = [];
+
+if (!empty($year)) {
+    $placeholders=[];
+    foreach($year as $i => $year){
+      $key = ":year$i";
+      $placeholders[] = $key;
+      $params[$key] = $year;
+    }
+    $sql .= " AND Year IN (" . implode(',', $placeholders) .")";
+}
+if (!empty($category)) {
+    $placeholders=[];
+    foreach($category as $i => $cat){
+      $key = ":cat$i";
+      $placeholders[] = $key;
+      $params[$key] = $cat;
+    }
+    $sql .= " AND Category IN (" . implode(',', $placeholders) .")";
+}
+if (!empty($type)) {
+    $placeholders=[];
+    foreach($type as $i => $type){
+      $key = ":type$i";
+      $placeholders[] = $key;
+      $params[$key] = $type;
+    }
+    $sql .= " AND Type IN (" . implode(',', $placeholders) .")";
+}
+
+if ($title !== '') {
+    $sql .= " AND Title LIKE :title";
+    $params[':title'] = "%$title%";
+}
+
+$stmt = $db->prepare($sql);
+$stmt->execute($params);
+
+echo "<h2>検索結果</h2>";
+foreach ($stmt as $row) {
+    $id = htmlspecialchars($row['ID']);
+    echo "<div>";
+    echo "{$row['Year']} / {$row['Category']} / {$row['Type']} / {$row['Title']}";
+    echo "<a href='detail.php?id=$id'>" . htmlspecialchars($row['Title']) . "</a>";
+    echo "</div>";
+}
+?>
+
+<?php
+$year = 2024;
+$page = 7;
+$pdf_path = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/{$year}_gakusei_teigensho.pdf";
+?>
+<iframe src="<?php echo $pdf_path; ?>#page=<?php echo $page; ?>" width="100%" height="600px"></iframe>
 
 
 <div class="contentArea__bottom">
