@@ -11,10 +11,12 @@ README.md
     |-_img
     |-parsedown
 |-suggestion
-    |- index.php ... 提言検索
-    |- detail.php ... それぞれの提言閲覧
-    |- style_pdf.css ... PDFのスタイルを整える（特にレスポンシブ対応）
+    |-index.php ... 提言検索
+    |-detail.php ... それぞれの提言閲覧
+    |-style_pdf.css ... PDFのスタイルを整える（特にレスポンシブ対応）
 |-assets
+    |-db
+        |-teigen.db ... 提言のデータ（ID・タイトル・分類[学修・施設・サービス・DE&I・統合・女子枠・その他]・種類[提言or意見まとめ]・分類番号・提言番号・ページ・大学からの回答ページ）
 |-(admin)
 ```
 Parsedown　... https://github.com/erusev/parsedown.git
@@ -29,7 +31,8 @@ Parsedown　... https://github.com/erusev/parsedown.git
 ---
 データベース
 
-SQLiteを利用。元データはSpreadSheetで管理（なぜならみんなで編集しやすいから）。エディタなどでデータを追加する必要がある。
+SQLiteを利用。大学のサーバでMySQLなどでデータベース層を独立で動かせるかわからないので、Apacheのみで動くSQLiteを利用中。
+<br>元データはSpreadSheetで管理（なぜならみんなで編集しやすいから）。エディタなどでデータを追加する必要がある。
 <br>例：https://sqlitebrowser.org/
 
 今後やりたいこと
