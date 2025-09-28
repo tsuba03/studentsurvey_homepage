@@ -1,0 +1,15 @@
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    border: none;
+}
+
+.c-searchTool__tagButton::before {
+    background: url(/studentsurvey/assets/img/icons/checkbox-off.svg) no-repeat 0 0;
+}
+.c-searchTool__tagButton:has(input:checked)::before {
+    background-image: url(/studentsurvey/assets/img/icons/inverted/checkbox-on.svg);
+}

@@ -60,7 +60,7 @@
 <a href="/studentsurvey/news/index.php">ニュース</a>
 </li>
 <li>
-<a href="#">提言検索</a>
+<a href="/studentsurvey/suggestion/index.php">提言検索</a>
 </li>
 <li>
 <a href="#">調査結果検索</a>
@@ -76,6 +76,7 @@
 <div class="c-heading c-heading--h1 c-mediaHeading__title">
 <div class="c-heading__inner">
 <h1 class='c-heading__label'>提言検索</h1>
+<p class="c-heading__lead">2016年から2024年までに発行した提言書の提言を検索いただけます。</p>
 </div>
 </div>
 </div>

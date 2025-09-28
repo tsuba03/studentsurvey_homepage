@@ -54,16 +54,16 @@
 <div class="c-globalNavigation__header">
 <ul class="c-globalNavigation__navList">
 <li>
-<a href="#">ホーム</a>
+<a href="/studentsurvey/index.php">ホーム</a>
+</li>
+<li>
+<a href="/studentsurvey/news/index.php">ニュース</a>
+</li>
+<li>
+<a href="/studentsurvey/suggestion/index.php">提言検索</a>
 </li>
     <!--機能未実装-->
-<!-- <li>
-<a href="#">ニュース</a>
-</li>
-<li>
-<a href="#">提言検索</a>
-</li>
-<li>
+<!--<li>
 <a href="#">調査結果検索</a>
 </li> -->
 </ul>

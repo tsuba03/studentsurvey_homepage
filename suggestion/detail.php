@@ -25,6 +25,7 @@
 <link rel="preload" as="style" fetchpriority="high" href="/studentsurvey/assets/css/font.css">
 <link rel="stylesheet" href="/studentsurvey/assets/css/font.css">
 <link rel="stylesheet" href="/studentsurvey/assets/css/style.css">
+<link rel="stylesheet" href="style_pdf.css">
 <script type="application/ld+json">
 {
         "@context": "http://schema.org",
@@ -60,7 +61,7 @@
 <a href="/studentsurvey/news/index.php">ニュース</a>
 </li>
 <li>
-<a href="#">提言検索</a>
+<a href="/studentsurvey/suggestion/index.php">提言検索</a>
 </li>
 <li>
 <a href="#">調査結果検索</a>
@@ -72,15 +73,126 @@
 
 <div class="contentArea">
 <div class="container">
+<?php
+$db = new PDO("sqlite:". __DIR__ . "/../assets/db/teigen.db");
+$id = $_GET['id'] ?? 0;
+
+$stmt = $db->prepare("SELECT * FROM teigen WHERE ID = :id");
+$stmt->execute([':id' => $id]);
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+if ($row) {
+    // 必要な変数をセット
+    $title        = htmlspecialchars($row['Title']);
+    $year         = $row['Year'];
+    $page         = $row['Page'] + 3;
+    $res_page     = $row['ResponsePage'] ? $row['ResponsePage'] + 1 : null;
+
+    // PDFのパスを判定
+    if ($year >= 2022) {
+        if ($year == 2022 && $row['CategoryNo'] > 10) {
+            $pdf_path = "https://www.siengp.titech.ac.jp/gakuseichousa/2022/gakuseichosa2022_houkokusyo_ver3.pdf";
+            $response_pdf = null;
+        } else {
+            $pdf_path = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/{$year}_gakusei_teigensho.pdf";
+            $response_pdf = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/gakuseichosa{$year}_daigakunotaio.pdf";
+        }
+    } else {
+        $pdf_path = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/{$year}_gakusei_teigensyo.pdf";
+        $response_pdf = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/{$year}_gakusei_follow.pdf";
+    }
+} else {
+    $title = null;
+}
+
+?>
+
+<?php if ($title): ?>
 <div class="c-mediaHeading">
 <div class="c-heading c-heading--h1 c-mediaHeading__title">
 <div class="c-heading__inner">
-<h1 class='c-heading__label'>提言検索</h1>
+<h1 class='c-heading__label'><?= $title ?></h1>
 </div>
 </div>
 </div>
 
 
+<div class="c-table">
+  <table class="c-table__content">
+    <caption class="c-table__caption">提言情報</caption>
+    <thead class="c-table__head">
+      <tr>
+        <th>提言年</th>
+        <th>分類</th>
+        <th>種類</th>
+        <th>提言番号</th>
+        <th>「提言書」ページ番号</th>
+        <?php if ($response_pdf && $res_page): ?>
+        <th>「大学の回答」ページ</th>
+        <?php endif; ?>
+      </tr>
+    </thead>
+    <tbody class="c-table__body">
+      <tr>
+        <td><?= $row['Year'] ?></td>
+        <td><?= $row['Category'] ?></td>
+        <td><?= $row['Type'] ?></td>
+        <td><?= $row['CategoryNo'] ?>-<?= $row['TeigenNo'] ?></td>
+        <td><?= $row['Page'] ?></td>
+        <?php if ($response_pdf && $res_page): ?>
+        <td><?= $row['ResponsePage'] ?></td>
+        <?php endif; ?>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="c-utilityLinkGroup c-utilityLinkGroup--horizontal" style="  display: flex; justify-content: center;  gap: 1rem; ">
+  <div class="c-utilityLinkGroup__item">
+    <a href="<?= $pdf_path ?>#page=<?= $page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL">
+      提言書
+      <svg class="c-button__icon c-button__icon--right icon" aria-hidden="true" role="img">
+        <use xlink:href="/studentsurvey/assets/img/sprite.svg#pdf"></use>
+      </svg>
+    </a>
+  </div>
+<?php if ($response_pdf && $res_page): ?>
+    <div class="c-utilityLinkGroup__item">
+    <a href="<?= $response_pdf ?>#page=<?= $res_page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL">
+      大学の回答
+      <svg class="c-button__icon c-button__icon--right icon" aria-hidden="true" role="img">
+        <use xlink:href="/studentsurvey/assets/img/sprite.svg#pdf"></use>
+      </svg>
+    </a>
+  </div>
+<?php endif; ?>
+</div>
+
+<div style="  display: flex; justify-content: left;  gap: 1rem; margin: 1rem;">
+<small>※Abobe Acrobat等のブラウザ拡張機能をご利用の場合、該当ページにリンクされない場合があります。<br>
+※リンクされない場合は拡張機能を切り、ブラウザデフォルトのPDFビューアをご利用ください。</small>
+</div>
+
+<div class="c-heading c-heading--h4">
+  <div class="c-heading__inner">
+    <h4 class="c-heading__label">提言書</h4>
+  </div>
+</div>
+  <iframe src="<?= $pdf_path ?>#page=<?= $page ?>"></iframe>
+
+<?php if ($response_pdf && $res_page): ?>
+<div class="c-heading c-heading--h4">
+  <div class="c-heading__inner">
+    <h4 class="c-heading__label">大学からの回答</h4>
+  </div>
+</div>
+    <iframe src="<?= $response_pdf ?>#page=<?= $res_page ?>"></iframe>
+<?php endif; ?>
+
+
+<?php else: ?>
+  記事が見つかりません
+<?php endif; ?>
 
 
 <div class="contentArea__bottom">
@@ -95,58 +207,6 @@
 </div>
 </div>
 </div>
-
-<?php
-$db = new PDO("sqlite:". __DIR__ . "/../assets/db/teigen.db");
-$id = $_GET['id'] ?? 0;
-
-$stmt = $db->prepare("SELECT * FROM teigen WHERE ID = :id");
-$stmt->execute([':id' => $id]);
-$row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-echo "ID is $id <br>";
-
-if ($row) {
-    echo "<h2>" . htmlspecialchars($row['Title']) . "</h2>";
-    echo "発行年: {$row['Year']}<br>";
-    echo "大分類: {$row['Category']}<br>";
-    echo "種類: {$row['Type']}<br>";
-    echo "大分類番号: {$row['CategoryNo']}<br>";
-    echo "記事番号: {$row['TeigenNo']}<br>";
-    echo "ページ: {$row['Page']}<br>";
-    echo "関連記事ページ: {$row['ResponsePage']}<br>";
-
-    // PDFリンク生成
-    // これで一応指定ページまで飛ぶのだけれど、アクロバットの拡張機能を使っているとリンクが効かない。
-    // その注意事項を載せておくのと、ページ数を載せておくことが吉
-    $year = $row['Year'];
-    $page = $row['Page'] + 3;
-    if($year>=2022){
-        if($year==2022 && $row['CategoryNo']>10){
-            $pdf_path = "https://www.siengp.titech.ac.jp/gakuseichousa/2022/gakuseichosa2022_houkokusyo_ver3.pdf";
-        }else{
-            $pdf_path = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/{$year}_gakusei_teigensho.pdf";
-            $response_pdf = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/gakuseichosa{$year}_daigakunotaio.pdf";
-        }
-    }else{
-        $pdf_path = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/{$year}_gakusei_teigensyo.pdf";
-        $response_pdf = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/{$year}_gakusei_follow.pdf";
-    }
-
-    if($row['ResponsePage']){
-        $res_page = $row['ResponsePage'] + 1;
-        echo "<a href='$pdf_path#page=$page' target='_blank'>冊子PDFを見る</a><br>";
-        echo "<a href='$response_pdf#page=$res_page' target='_blank'>関連記事PDFを見る</a><br>";
-        echo "<iframe src= $pdf_path#page=$page width='80%' height='600px'></iframe>";
-        echo "<iframe src= $response_pdf#page=$res_page width='80%' height='600px'></iframe>";
-    }else{
-        echo "<a href='$pdf_path#page=$page' target='_blank'>冊子PDFを見る</a><br>";
-        echo "<iframe src= $pdf_path#page=$page width='80%' height='600px'></iframe>";
-    }
-} else {
-    echo "記事が見つかりません";
-}
-?>
 
 <!-- /.contentArea__bottom -->
 </div>

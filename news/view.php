@@ -81,13 +81,13 @@ $body = preg_replace('/^---.*?---\s*/s', '', $content, 1);
 <div class="c-globalNavigation__header">
 <ul class="c-globalNavigation__navList">
 <li>
-<a href="#">ホーム</a>
+<a href="/studentsurvey/index.php">ホーム</a>
 </li>
 <li>
-<a href="#">ニュース</a>
+<a href="/studentsurvey/news/index.php">ニュース</a>
 </li>
 <li>
-<a href="#">提言検索</a>
+<a href="/studentsurvey/suggestion/index.php">提言検索</a>
 </li>
 <li>
 <a href="#">調査結果検索</a>

@@ -60,7 +60,7 @@
 <a href="/studentsurvey/news/index.php">ニュース</a>
 </li>
 <li>
-<a href="#">提言検索</a>
+<a href="/studentsurvey/suggestion/index.php">提言検索</a>
 </li>
 <li>
 <a href="#">調査結果検索</a>
