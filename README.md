@@ -8,7 +8,7 @@ README.md
     |-view.php ... それぞれの記事
     |-Parsedown.php　... Markdownから読み込み
     |-posts ... 記事の格納
-    |-_img
+    |-_img ... 記事の写真はここに格納
     |-parsedown
 |-suggestion
     |-index.php ... 提言検索
@@ -17,10 +17,10 @@ README.md
 |-assets
     |-db
         |-teigen.db ... 提言のデータ（ID・タイトル・分類[学修・施設・サービス・DE&I・統合・女子枠・その他]・種類[提言or意見まとめ]・分類番号・提言番号・ページ・大学からの回答ページ）
-    |-img（トップページの写真はここに格納）
-    |-css（デザインシステムより）
-    |-font（デザインシステムより）
-    |-js（デザインシステムより）
+    |-img ... トップページの写真はここに格納
+    |-css ... デザインシステムより
+    |-font ... デザインシステムより
+    |-js ... デザインシステムより
 |-(admin)
 ```
 Parsedown　... https://github.com/erusev/parsedown.git
