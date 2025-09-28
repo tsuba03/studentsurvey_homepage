@@ -80,124 +80,293 @@
 </div>
 </div>
 
-
-<a href="https://www.siengp.titech.ac.jp/gakuseichousa/2024/2024_gakusei_teigensho.pdf#page=7">test</a>
-<!-- これで一応指定ページまで飛ぶのだけれど、アクロバットの拡張機能を使っているとリンクが効かない。
-その注意事項を載せておくのと、ページ数を載せておくことが吉 -->
-
-<form method="get" action="">
-  発行年: 
-  <div class="c-searchTool">
-    <fieldset class="c-searchTool__tagControls" data-js-taglist="">
-    <legend>提言年を選択</legend>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2024">2024年</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2022">2022年</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2020">2020年</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2018">2018年</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2016">2016年</label>
-    </fieldset>
+<div class="c-form">
+  <form method="get" action="">
+  <div class="c-form__body">
+  <div class="grid">
+    <div class="grid__col grid__col--span12">
+    <div class="c-form__item">
+    <label class="c-form__label" for="input-text"> <span class="c-form__labelText">提言年</span></label>
+      <div class="c-searchTool">
+        <fieldset class="c-searchTool__tagControls" data-js-taglist="">
+        <legend>提言年を選択</legend>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2024">2024年</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2022">2022年</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2020">2020年</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2018">2018年</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="year[]" value="2016">2016年</label>
+        </fieldset>
+      </div>
+    </div>
+    </div>
+    <div class="grid__col grid__col--span12">
+    <div class="c-form__item">
+    <label class="c-form__label" for="input-text"> <span class="c-form__labelText">分類</span></label>
+      <div class="c-searchTool">
+        <fieldset class="c-searchTool__tagControls" data-js-taglist="">
+        <legend>提言の分類を選択</legend>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="学修">学修</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="施設">施設</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="サービス">サービス</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="DE&I">DE&I</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="統合">統合</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="女子枠">女子枠</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="その他">その他</label>
+        </fieldset>
+      </div>
+    </div>
+    </div>
+    <div class="grid__col grid__col--span12">
+    <div class="c-form__item">
+    <label class="c-form__label" for="input-text"> <span class="c-form__labelText">種類</span></label>
+      <div class="c-searchTool">
+        <fieldset class="c-searchTool__tagControls" data-js-taglist="">
+        <legend>提言の種類を選択</legend>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="type[]" value="提言">提言</label>
+        <label class="c-searchTool__tagButton"><input type="checkbox" name="type[]" value="意見まとめ">意見まとめ</label>
+        </fieldset>
+      </div>
+    </div>
+    </div>
+    <div class="grid__col grid__col--span12">
+    <div class="c-form__item">
+    <label class="c-form__label" for="input-text"> <span class="c-form__labelText">キーワード</span></label>
+      <div class="c-searchTool">
+          <div class="c-search">
+          <div class="c-search__input">
+            <input class="c-input" type="search" id="search" name="title" placeholder="検索キーワードを入力">
+          </div>
+          </div>
+      </div>
+    </div>
+    </div>
   </div>
-  
-  <br>
-  大分類:
-  <div class="c-searchTool">
-    <fieldset class="c-searchTool__tagControls" data-js-taglist="">
-    <legend>提言の分類を選択</legend>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="学修">学修</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="施設">施設</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="サービス">サービス</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="DE&I">DE&I</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="統合">統合</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="女子枠">女子枠</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="category[]" value="その他">その他</label>
-    </fieldset>
   </div>
-  <br>
-  種類: 
-  <div class="c-searchTool">
-    <fieldset class="c-searchTool__tagControls" data-js-taglist="">
-    <legend>提言の分類を選択</legend>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="type[]" value="提言">提言</label>
-    <label class="c-searchTool__tagButton"><input type="checkbox" name="type[]" value="意見まとめ">意見まとめ</label>
-    </fieldset>
-  </div>
-  <br>
-  タイトル: 
-  <div class="c-search">
-  <div class="c-search__input">
-    <input class="c-input" type="search" id="search" placeholder="検索キーワードを入力">
-    <!-- <button class="c-search__submitBtn" type="submit" aria-label="送信"><svg class="icon" aria-hidden="true" role="img"><use xlink:href="/assets/img/sprite.svg#search"></use></svg></button> -->
-  </div>
+      <div class="c-form__footer">
+      <button type="reset" class="c-button c-button--secondary">
+        <span class="c-button__label">リセット</span>
+      </button>
+      <button type="submit" class="c-button c-button--primary">
+        <span class="c-button__label">検索</span>
+      </button>
+    </div>
+  </form>
 </div>
-<br>
-  <input type="submit" value="検索">
-</form>
 
 <?php
-$db = new PDO("sqlite:". __DIR__ . "/../assets/db/teigen.db");
+$db = new PDO("sqlite:" . __DIR__ . "/../assets/db/teigen.db");
 
 // 入力値取得
 $year = $_GET['year'] ?? [];
 $category = $_GET['category'] ?? [];
 $type = $_GET['type'] ?? [];
 $title = $_GET['title'] ?? '';
+$page = isset($_GET['page']) ? max(1, intval($_GET['page'])) : 1; // ページ番号
+$perPage = 20; // 1ページあたり件数
+$offset = ($page - 1) * $perPage;
+
+// === ラベル用の値をまとめる ===
+$labels = [];
 
 // SQL 組み立て
-$sql = "SELECT Year, Category, Type, Title, Page, ID FROM teigen WHERE 1=1";
+$sqlBase = "FROM teigen WHERE 1=1";
 $params = [];
 
 if (!empty($year)) {
     $placeholders=[];
-    foreach($year as $i => $year){
+    foreach($year as $i => $y){
+      $labels[] = htmlspecialchars($y, ENT_QUOTES, 'UTF-8');
       $key = ":year$i";
       $placeholders[] = $key;
-      $params[$key] = $year;
+      $params[$key] = $y;
     }
-    $sql .= " AND Year IN (" . implode(',', $placeholders) .")";
+    $sqlBase .= " AND Year IN (" . implode(',', $placeholders) .")";
 }
 if (!empty($category)) {
     $placeholders=[];
-    foreach($category as $i => $cat){
+    foreach($category as $i => $c){
+      $labels[] = htmlspecialchars($c, ENT_QUOTES, 'UTF-8');
       $key = ":cat$i";
       $placeholders[] = $key;
-      $params[$key] = $cat;
+      $params[$key] = $c;
     }
-    $sql .= " AND Category IN (" . implode(',', $placeholders) .")";
+    $sqlBase .= " AND Category IN (" . implode(',', $placeholders) .")";
 }
 if (!empty($type)) {
     $placeholders=[];
-    foreach($type as $i => $type){
+    foreach($type as $i => $t){
+      $labels[] = htmlspecialchars($t, ENT_QUOTES, 'UTF-8');
       $key = ":type$i";
       $placeholders[] = $key;
-      $params[$key] = $type;
+      $params[$key] = $t;
     }
-    $sql .= " AND Type IN (" . implode(',', $placeholders) .")";
+    $sqlBase .= " AND Type IN (" . implode(',', $placeholders) .")";
 }
-
 if ($title !== '') {
-    $sql .= " AND Title LIKE :title";
+    $labels[] = "キーワード: " . htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
+    $sqlBase .= " AND Title LIKE :title";
     $params[':title'] = "%$title%";
 }
 
-$stmt = $db->prepare($sql);
-$stmt->execute($params);
+// 件数カウント
+$countSql = "SELECT COUNT(*) " . $sqlBase;
+$countStmt = $db->prepare($countSql);
+$countStmt->execute($params);
+$total = (int)$countStmt->fetchColumn();
 
-echo "<h2>検索結果</h2>";
-foreach ($stmt as $row) {
-    $id = htmlspecialchars($row['ID']);
-    echo "<div>";
-    echo "{$row['Year']} / {$row['Category']} / {$row['Type']} / {$row['Title']}";
-    echo "<a href='detail.php?id=$id'>" . htmlspecialchars($row['Title']) . "</a>";
-    echo "</div>";
+// ページデータ取得
+$sql = "SELECT Year, Category, Type, Title, Page, ID " . $sqlBase . " LIMIT :limit OFFSET :offset";
+$stmt = $db->prepare($sql);
+
+// LIMIT, OFFSET は整数バインド
+foreach ($params as $k => $v) {
+    $stmt->bindValue($k, $v);
+}
+$stmt->bindValue(':limit', $perPage, PDO::PARAM_INT);
+$stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
+
+$stmt->execute();
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+// 総ページ数
+$totalPages = ceil($total / $perPage);
+?>
+
+
+<div class="c-heading c-heading--h2">
+  <div class="c-heading__inner">
+  <h2 class="c-heading__label">検索結果</h2>
+  <div class="c-labelGroup">
+    <?php foreach ($labels as $label): ?>
+    <span class="c-label">
+      <span class="c-label__text"><?= $label ?></span>
+    </span>
+    <?php endforeach; ?>
+  </div>
+  </div>
+</div>
+
+<ul class="c-entryList">
+<ul class="c-entryList">
+<?php foreach ($rows as $row): ?>
+  <li class="c-entryList__item">
+    <a href="detail.php?id=<?= htmlspecialchars($row['ID']) ?>" class="c-entryList__link"> 
+      <div class="c-entryList__date">
+        <p class="c-entryList__dateTime">
+          <?= htmlspecialchars($row['Year']) ?>&nbsp;|&nbsp;<?= htmlspecialchars($row['Category']) ?>
+        </p>
+      </div>
+      <div class="c-entryList__body">
+        <div class="c-entryList__text">
+          <?= htmlspecialchars($row['Title']) ?>
+        </div>
+        <div class="c-entryList__tags">
+          <span class="c-label">
+            <span class="c-label__text"><?= htmlspecialchars($row['Type']) ?></span> 
+          </span>
+        </div>
+        <svg class="c-entryList__icon icon" aria-hidden="true" role="img">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_right"></use>
+        </svg>
+      </div>
+    </a>
+  </li>
+<?php endforeach; ?>
+</ul>
+
+<!-- ページネーション -->
+<?php
+// クエリパラメータを維持しつつ page だけ変える関数
+function buildPageUrl($page) {
+    $query = $_GET;
+    $query['page'] = $page;
+    return '?' . http_build_query($query);
 }
 ?>
 
-<?php
-$year = 2024;
-$page = 7;
-$pdf_path = "https://www.siengp.titech.ac.jp/gakuseichousa/$year/{$year}_gakusei_teigensho.pdf";
-?>
-<iframe src="<?php echo $pdf_path; ?>#page=<?php echo $page; ?>" width="100%" height="600px"></iframe>
+<div class="c-pagination">
+
+  <!-- 最初のページ -->
+  <div class="c-pagination__item c-pagination__item--controller">
+    <?php if ($page > 1): ?>
+      <a href="<?= buildPageUrl(1) ?>" aria-label="最初のページ">
+        <svg class="c-button__icon icon" aria-hidden="true" role="img">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron-line_left"></use>
+        </svg>
+      </a>
+    <?php else: ?>
+      <span aria-hidden="true">
+        <svg class="c-button__icon icon">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron-line_left"></use>
+        </svg>
+      </span>
+    <?php endif; ?>
+  </div>
+
+  <!-- 前へ -->
+  <div class="c-pagination__item c-pagination__item--controller">
+    <?php if ($page > 1): ?>
+      <a href="<?= buildPageUrl($page-1) ?>" aria-label="前へ">
+        <svg class="c-button__icon icon" aria-hidden="true" role="img">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_left"></use>
+        </svg>
+      </a>
+    <?php else: ?>
+      <span aria-hidden="true">
+        <svg class="c-button__icon icon">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_left"></use>
+        </svg>
+      </span>
+    <?php endif; ?>
+  </div>
+
+  <!-- セレクトでページ移動 -->
+  <div class="c-selectGroup">
+    <select class="c-select" aria-label="表示するページ" onchange="location.href=this.value">
+      <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+        <option value="<?= buildPageUrl($i) ?>" <?= $i == $page ? 'selected' : '' ?>>
+          <?= $i ?> / <?= $totalPages ?>
+        </option>
+      <?php endfor; ?>
+    </select>
+  </div>
+
+  <!-- 次へ -->
+  <div class="c-pagination__item c-pagination__item--controller">
+    <?php if ($page < $totalPages): ?>
+      <a href="<?= buildPageUrl($page+1) ?>" aria-label="次へ">
+        <svg class="c-button__icon icon" aria-hidden="true" role="img">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_right"></use>
+        </svg>
+      </a>
+    <?php else: ?>
+      <span aria-hidden="true">
+        <svg class="c-button__icon icon">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron_right"></use>
+        </svg>
+      </span>
+    <?php endif; ?>
+  </div>
+
+  <!-- 最後のページ -->
+  <div class="c-pagination__item c-pagination__item--controller">
+    <?php if ($page < $totalPages): ?>
+      <a href="<?= buildPageUrl($totalPages) ?>" aria-label="最後のページ">
+        <svg class="c-button__icon icon" aria-hidden="true" role="img">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron-line_right"></use>
+        </svg>
+      </a>
+    <?php else: ?>
+      <span aria-hidden="true">
+        <svg class="c-button__icon icon">
+          <use xlink:href="/studentsurvey/assets/img/sprite.svg#chevron-line_right"></use>
+        </svg>
+      </span>
+    <?php endif; ?>
+  </div>
+
+</div>
+
 
 
 <div class="contentArea__bottom">
