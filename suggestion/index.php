@@ -238,6 +238,7 @@ $totalPages = ceil($total / $perPage);
   <div class="c-heading__inner">
   <h2 class="c-heading__label">検索結果</h2>
   <div class="c-labelGroup">
+    件数: <?= $total ?>
     <?php foreach ($labels as $label): ?>
     <span class="c-label">
       <span class="c-label__text"><?= $label ?></span>
