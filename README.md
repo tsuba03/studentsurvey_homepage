@@ -11,6 +11,9 @@ README.md
     |-_img
     |-parsedown
 |-suggestion
+    |- index.php ... 提言検索
+    |- detail.php ... それぞれの提言閲覧
+    |- style_pdf.css ... PDFのスタイルを整える（特にレスポンシブ対応）
 |-assets
 |-(admin)
 ```
