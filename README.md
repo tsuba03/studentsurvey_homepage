@@ -8,10 +8,19 @@ README.md
     |-view.php ... それぞれの記事
     |-Parsedown.php　... Markdownから読み込み
     |-posts ... 記事の格納
-    |-_img
+    |-_img ... 記事の写真はここに格納
     |-parsedown
 |-suggestion
+    |-index.php ... 提言検索
+    |-detail.php ... それぞれの提言閲覧
+    |-style_pdf.css ... PDFのスタイルを整える（特にレスポンシブ対応）
 |-assets
+    |-db
+        |-teigen.db ... 提言のデータ（ID・タイトル・分類[学修・施設・サービス・DE&I・統合・女子枠・その他]・種類[提言or意見まとめ]・分類番号・提言番号・ページ・大学からの回答ページ）
+    |-img ... トップページの写真はここに格納
+    |-css ... デザインシステムより
+    |-font ... デザインシステムより
+    |-js ... デザインシステムより
 |-(admin)
 ```
 Parsedown　... https://github.com/erusev/parsedown.git
@@ -22,11 +31,13 @@ Parsedown　... https://github.com/erusev/parsedown.git
 デザイン　... https://design-system.isct.ac.jp/ja/website
 
 科学大公式のデザインシステムは、完成度が非常に高い。使いたいパーツを切り貼りすればそれでOK。仮にデザインの更新が行われる場合は、assetsを変更する必要がある。
+<br>現状、cssでurlを利用してアイコンを指定しているもののパスが(/assets/...)となっているので、これによって不具合が起こる場合がある。
 
 ---
 データベース
 
-SQLiteを利用。元データはSpreadSheetで管理（なぜならみんなで編集しやすいから）。エディタなどでデータを追加する必要がある。
+SQLiteを利用。大学のサーバでMySQLなどでデータベース層を独立で動かせるかわからないので、Apacheのみで動くSQLiteを利用中。
+<br>元データはSpreadSheetで管理（なぜならみんなで編集しやすいから）。エディタなどでデータを追加する必要がある。
 <br>例：https://sqlitebrowser.org/
 
 今後やりたいこと
