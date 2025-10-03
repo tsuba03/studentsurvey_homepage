@@ -85,8 +85,15 @@ if ($row) {
     // 必要な変数をセット
     $title        = htmlspecialchars($row['Title']);
     $year         = $row['Year'];
-    $page         = $row['Page'] + 3;
-    $res_page     = $row['ResponsePage'] ? $row['ResponsePage'] + 1 : null;
+    if($year==2016){
+      $page         = $row['Page'] + 2;
+      $res_page     = $row['ResponsePage'] ? $row['ResponsePage'] + 2 : null;
+    }else{
+      $page         = $row['Page'] + 3;
+      $res_page     = $row['ResponsePage'] ? $row['ResponsePage'] + 1 : null;
+    }
+    
+    
 
     // PDFのパスを判定
     if ($year >= 2022) {
@@ -149,7 +156,7 @@ if ($row) {
 
 <div class="c-utilityLinkGroup c-utilityLinkGroup--horizontal" style="  display: flex; justify-content: center;  gap: 1rem; ">
   <div class="c-utilityLinkGroup__item">
-    <a href="<?= $pdf_path ?>#page=<?= $page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL">
+    <a href="<?= $pdf_path ?>#page=<?= $page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL" target="_blank" rel="noopener noreferrer">
       提言書
       <svg class="c-button__icon c-button__icon--right icon" aria-hidden="true" role="img">
         <use xlink:href="/studentsurvey/assets/img/sprite.svg#pdf"></use>
@@ -158,7 +165,7 @@ if ($row) {
   </div>
 <?php if ($response_pdf && $res_page): ?>
     <div class="c-utilityLinkGroup__item">
-    <a href="<?= $response_pdf ?>#page=<?= $res_page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL">
+    <a href="<?= $response_pdf ?>#page=<?= $res_page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL" target="_blank" rel="noopener noreferrer">
       大学の回答
       <svg class="c-button__icon c-button__icon--right icon" aria-hidden="true" role="img">
         <use xlink:href="/studentsurvey/assets/img/sprite.svg#pdf"></use>
