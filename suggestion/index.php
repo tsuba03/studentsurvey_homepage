@@ -24,7 +24,7 @@
 <link rel="icon" sizes="32x32" href="favicon.ico">
 <link rel="preload" as="style" fetchpriority="high" href="/studentsurvey/assets/css/font.css">
 <link rel="stylesheet" href="/studentsurvey/assets/css/font.css">
-<link rel="stylesheet" href="/studentsurvey/assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/style.css">
 <script type="application/ld+json">
 {
         "@context": "http://schema.org",
@@ -62,9 +62,9 @@
 <li>
 <a href="/studentsurvey/suggestion/index.php">提言検索</a>
 </li>
-<li>
+<!-- <li>
 <a href="#">調査結果検索</a>
-</li>
+</li> -->
 </ul>
 </div>
 </div>
@@ -85,6 +85,7 @@
   <form method="get" action="">
   <div class="c-form__body">
   <div class="grid">
+    <!--提言年の選択-->
     <div class="grid__col grid__col--span12">
     <div class="c-form__item">
     <label class="c-form__label" for="input-text"> <span class="c-form__labelText">提言年</span></label>
@@ -100,6 +101,7 @@
       </div>
     </div>
     </div>
+    <!--提言分類の選択-->
     <div class="grid__col grid__col--span12">
     <div class="c-form__item">
     <label class="c-form__label" for="input-text"> <span class="c-form__labelText">分類</span></label>
@@ -117,6 +119,7 @@
       </div>
     </div>
     </div>
+    <!--提言種類の選択-->
     <div class="grid__col grid__col--span12">
     <div class="c-form__item">
     <label class="c-form__label" for="input-text"> <span class="c-form__labelText">種類</span></label>
@@ -129,6 +132,7 @@
       </div>
     </div>
     </div>
+    <!--キーワード検索検索-->
     <div class="grid__col grid__col--span12">
     <div class="c-form__item">
     <label class="c-form__label" for="input-text"> <span class="c-form__labelText">キーワード</span></label>
@@ -208,6 +212,7 @@ if ($title !== '') {
     $sqlBase .= " AND Title LIKE :title";
     $params[':title'] = "%$title%";
 }
+// ここまでSQL
 
 // 件数カウント
 $countSql = "SELECT COUNT(*) " . $sqlBase;
@@ -227,6 +232,7 @@ $stmt->bindValue(':limit', $perPage, PDO::PARAM_INT);
 $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
 
 $stmt->execute();
+// ゲットしたデータ
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 // 総ページ数
@@ -252,13 +258,16 @@ $totalPages = ceil($total / $perPage);
 <ul class="c-entryList">
 <?php foreach ($rows as $row): ?>
   <li class="c-entryList__item">
+<!--詳細ページへのリンクはIDによって行う-->
     <a href="detail.php?id=<?= htmlspecialchars($row['ID']) ?>" class="c-entryList__link"> 
       <div class="c-entryList__date">
         <p class="c-entryList__dateTime">
+          <!--年とカテゴリの表示-->
           <?= htmlspecialchars($row['Year']) ?>&nbsp;|&nbsp;<?= htmlspecialchars($row['Category']) ?>
         </p>
       </div>
       <div class="c-entryList__body">
+        <!--タイトルの表示-->
         <div class="c-entryList__text">
           <?= htmlspecialchars($row['Title']) ?>
         </div>

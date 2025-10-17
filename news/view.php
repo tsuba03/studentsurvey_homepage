@@ -89,9 +89,9 @@ $body = preg_replace('/^---.*?---\s*/s', '', $content, 1);
 <li>
 <a href="/studentsurvey/suggestion/index.php">提言検索</a>
 </li>
-<li>
+<!-- <li>
 <a href="#">調査結果検索</a>
-</li>
+</li> -->
 </ul>
 </div>
 </div>

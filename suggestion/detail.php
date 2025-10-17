@@ -63,9 +63,9 @@
 <li>
 <a href="/studentsurvey/suggestion/index.php">提言検索</a>
 </li>
-<li>
+<!-- <li>
 <a href="#">調査結果検索</a>
-</li>
+</li> -->
 </ul>
 </div>
 </div>
@@ -82,7 +82,7 @@ $stmt->execute([':id' => $id]);
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if ($row) {
-    // 必要な変数をセット
+    // PDFのページ番号とタイトル
     $title        = htmlspecialchars($row['Title']);
     $year         = $row['Year'];
     if($year==2016){
@@ -134,6 +134,7 @@ if ($row) {
         <th>種類</th>
         <th>提言番号</th>
         <th>「提言書」ページ番号</th>
+        <!--大学の回答がNullでないなら表示-->
         <?php if ($response_pdf && $res_page): ?>
         <th>「大学の回答」ページ</th>
         <?php endif; ?>
@@ -154,6 +155,7 @@ if ($row) {
   </table>
 </div>
 
+        <!--提言へのリンクボタン-->
 <div class="c-utilityLinkGroup c-utilityLinkGroup--horizontal" style="  display: flex; justify-content: center;  gap: 1rem; ">
   <div class="c-utilityLinkGroup__item">
     <a href="<?= $pdf_path ?>#page=<?= $page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL" target="_blank" rel="noopener noreferrer">
@@ -163,6 +165,7 @@ if ($row) {
       </svg>
     </a>
   </div>
+        <!--大学の回答がNullでないなら表示-->
 <?php if ($response_pdf && $res_page): ?>
     <div class="c-utilityLinkGroup__item">
     <a href="<?= $response_pdf ?>#page=<?= $res_page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL" target="_blank" rel="noopener noreferrer">
@@ -175,11 +178,13 @@ if ($row) {
 <?php endif; ?>
 </div>
 
+<!--一応の注意書き・おそらく埋め込みならちゃんと動くはず-->
 <div style="  display: flex; justify-content: left;  gap: 1rem; margin: 1rem;">
 <small>※Abobe Acrobat等のブラウザ拡張機能をご利用の場合、該当ページにリンクされない場合があります。<br>
 ※リンクされない場合は拡張機能を切り、ブラウザデフォルトのPDFビューアをご利用ください。</small>
 </div>
 
+<!--埋め込みPDF-->
 <div class="c-heading c-heading--h4">
   <div class="c-heading__inner">
     <h4 class="c-heading__label">提言書</h4>
@@ -187,6 +192,7 @@ if ($row) {
 </div>
   <iframe src="<?= $pdf_path ?>#page=<?= $page ?>"></iframe>
 
+<!--大学の回答がNullでないなら表示-->
 <?php if ($response_pdf && $res_page): ?>
 <div class="c-heading c-heading--h4">
   <div class="c-heading__inner">

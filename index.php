@@ -3,6 +3,7 @@
 <head prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb# website:http://ogp.me/ns/website#">
 <meta charset="UTF-8">
 <title>学勢調査</title>
+<!--SEO対策でたくさんメタがある（もともと大学のデザインに載ってた）-->
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="学勢調査">
 <meta name="description" content="学勢調査は、東京科学大学で2年に一度開催される全学生を対象としたこの大規模なWebアンケート調査です。アンケート結果をもとに学生自ら大学に対して提言を行い、大学を改善します。">
@@ -150,7 +151,7 @@
 </a>
 </div></div>
 
-
+    <!--トップの主査コメント-->
 <div class="c-pickupContents c-pickupContents--related">
   <div class="c-pickupContents__inner c-pickupContents__inner--imagePosRight">
     <div class="c-pickupContents__body">
@@ -168,6 +169,7 @@
         <p class="c-paragraph" style="text-align: right;">学勢調査2026 WG主査　鍵直樹</p>
       </div>
     </div>
+    <!--学勢調査ロゴ　assets/img/logo_studentsurvey.png-->
     <div class="c-pickupContents__image">
       <figure class="c-image c-image--fullWidth">
         <img src="assets/img/logo_studentsurvey.png" width="100" height="100" alt="Logo"/>
@@ -176,48 +178,48 @@
   </div>
 </div>
 
-    <!-- 新着ニュース（未リリース） -->
+    <!-- 新着ニュース -->
 <?php
-// $dir = __DIR__ . '/news/posts/';
-// $files = glob($dir . '*.md');
-// rsort($files); // 新しい順
-// $files = array_slice($files, 0, 3); // 最新3件だけ取得
+$dir = __DIR__ . '/news/posts/';
+$files = glob($dir . '*.md');
+rsort($files); // 新しい順
+$files = array_slice($files, 0, 3); // 最新3件だけ取得
 
-// echo "<h1>お知らせ一覧</h1><ul class='c-entryList'>";
-// foreach ($files as $file) {
-//     $content = file_get_contents($file);
+echo "<h1>お知らせ一覧</h1><ul class='c-entryList'>";
+foreach ($files as $file) {
+    $content = file_get_contents($file);
 
-//     // メタ情報抽出
-//     preg_match('/title:\s*(.+)/', $content, $m1);
-//     preg_match('/date:\s*(.+)/', $content, $m2);
+    // メタ情報抽出
+    preg_match('/title:\s*(.+)/', $content, $m1);
+    preg_match('/date:\s*(.+)/', $content, $m2);
 
-//     $title = $m1[1] ?? basename($file);
-//     $date  = $m2[1] ?? '';
-//     $dt = new DateTime($date);
-//     $jpDate = $dt->format('Y年m月d日');
+    $title = $m1[1] ?? basename($file);
+    $date  = $m2[1] ?? '';
+    $dt = new DateTime($date);
+    $jpDate = $dt->format('Y年m月d日');
 
-//     $id = urlencode(basename($file));
-//     echo <<<HTML
-//      <li class='c-entryList__item'>
-//     <a href='news/view.php?id=$id' class='c-entryList__link'>
-//       <div class='c-entryList__date'>
-//         <time class='c-entryList__dateTime' datetime='$date'>
-//           $jpDate
-//         </time>
-//       </div>
-//       <div class='c-entryList__body'>
-//         <div class='c-entryList__text'>
-//           $title
-//         </div>
-//         <svg class='c-entryList__icon icon' aria-hidden='true' role='img'>
-//           <use xlink:href='/assets/img/sprite.svg#chevron_right'></use>
-//         </svg>
-//       </div>
-//     </a>
-//     </li>
-//     HTML;
-// }
-// echo "</ul>";
+    $id = urlencode(basename($file));
+    echo <<<HTML
+     <li class='c-entryList__item'>
+    <a href='news/view.php?id=$id' class='c-entryList__link'>
+      <div class='c-entryList__date'>
+        <time class='c-entryList__dateTime' datetime='$date'>
+          $jpDate
+        </time>
+      </div>
+      <div class='c-entryList__body'>
+        <div class='c-entryList__text'>
+          $title
+        </div>
+        <svg class='c-entryList__icon icon' aria-hidden='true' role='img'>
+          <use xlink:href='/assets/img/sprite.svg#chevron_right'></use>
+        </svg>
+      </div>
+    </a>
+    </li>
+    HTML;
+}
+echo "</ul>";
 ?>
 
 
@@ -281,7 +283,7 @@ studentsurvey@ssc.isct.ac.jp
   </a>
 </div>
 
-
+<!--最新の学勢調査についての報告-->
 <div class="c-heading c-heading--h2">
 <div class="c-heading__inner">
 <h2 class="c-heading__label">学勢調査2024</h2>
@@ -295,7 +297,7 @@ studentsurvey@ssc.isct.ac.jp
   提言書は、
   <a href="#reports">当ページ</a>にて公開しております。日本語で書かれたPDF形式のものと、翻訳等が容易に可能なHTML形式のものを公開しています。
 </p>
-
+<!--文字＋写真のセクション-->
 <div class="c-articleContents">
 <div class="grid grid--justifyCenter grid--dirRowReverse">
 <div class="grid__col grid__col--span6 md:grid__col--span12">
@@ -315,6 +317,7 @@ studentsurvey@ssc.isct.ac.jp
 </div>
 </div>
 
+<!--自動で画像が動く窓 imgタグのsrcを変更することで画像を変更可能（比率だけ注意:16:9）-->
 <div class="grid__col grid__col--span6 md:grid__col--span12">
 <section class="splide c-carousel c-carousel--default" aria-label="カルーセルの概要" data-js-carousel="1" data-js-carousel-auto="true" data-js-carousel-loop="true" data-js-carousel-pagination="true"><div class="splide__track">
 <ul class="splide__list"><li class="splide__slide"><div class="c-image"><picture><img src="assets/img/hotei2024_pic.webp" width="960" height="540" alt="学勢調査2024 提言書奉呈式">
@@ -346,10 +349,12 @@ studentsurvey@ssc.isct.ac.jp
 </div>
 </section>
 </div>
+</div>
+<!--ここまで動く窓-->
+</div>
+<!--ここまで文字＋写真のセクション-->
 
-</div></div>
-
-
+<!--過去の調査の表-->
 <div class="c-heading c-heading--h3">
 <div class="c-heading__inner">
 <h3 class="c-heading__label" id="reports">過去の学勢調査</h3>
@@ -358,6 +363,7 @@ studentsurvey@ssc.isct.ac.jp
   提言に対する大学の対応についても以下のリンクからご確認いただけます。
 </p>
 </div>
+<!--データ利用のお願い-->
 <div class="c-importantNotice">
   <div class="c-importantNotice__header">
     <h2 class="c-importantNotice__heading">お願い</h2>
@@ -369,6 +375,7 @@ studentsurvey@ssc.isct.ac.jp
     </p>
   </div>
 </div>
+
 <div class="c-table c-table--fixed c-table--firstQuarter">
 <table class="c-table__content">
   <tbody class="c-table__body">
@@ -377,6 +384,7 @@ studentsurvey@ssc.isct.ac.jp
       <td style="text-align: center;">提言書</td>
       <td style="text-align: center;">大学の対応</td>
     </tr>
+<!--2024年-->
     <tr>
       <th class="c-table__headCell">学勢調査2024 &nbsp;<span style="font-weight: bold;color:#f02b2b;"><i>NEW!!</i></span></th>
       <td>
@@ -409,6 +417,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p> -->
       </td>
     </tr>
+    <!--2022年-->
     <tr>
       <th class="c-table__headCell">学勢調査2022</th>
       <td>
@@ -440,6 +449,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p>
       </td>
     </tr>
+    <!--2020年-->
     <tr>
       <th class="c-table__headCell">学勢調査2020</th>
       <td>
@@ -466,6 +476,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p>
       </td>
     </tr>
+    <!--2018年-->
     <tr>
       <th class="c-table__headCell">学勢調査2018</th>
       <td>
@@ -486,6 +497,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p>
       </td>
     </tr>
+    <!--2016年-->
     <tr>
       <th class="c-table__headCell">学勢調査2016</th>
       <td>
@@ -506,6 +518,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p>
       </td>
     </tr>
+    <!--2014年-->
     <tr>
       <th class="c-table__headCell">学勢調査2014</th>
       <td>
@@ -532,6 +545,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p>
       </td>
     </tr>
+    <!--2012年-->
     <tr>
       <th class="c-table__headCell">学勢調査2012</th>
       <td>
@@ -552,6 +566,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p>
       </td>
     </tr>
+    <!--2010年-->
     <tr>
       <th class="c-table__headCell">学勢調査2010</th>
       <td>
@@ -577,6 +592,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p>
       </td>
     </tr>
+    <!--2008年-->
     <tr>
       <th class="c-table__headCell">学勢調査2008</th>
       <td>
@@ -602,6 +618,7 @@ studentsurvey@ssc.isct.ac.jp
         </svg></a></p>
       </td>
     </tr>
+    <!--2005年-->
     <tr>
       <th class="c-table__headCell">学勢調査2005</th>
       <td>
@@ -626,7 +643,7 @@ studentsurvey@ssc.isct.ac.jp
 </table>
 </div>
 </div>
-
+<!--メンバー紹介-->
 <div class="c-heading c-heading--h2">
 <div class="c-heading__inner">
 <h2 class="c-heading__label" id="member">メンバー</h2>
@@ -668,6 +685,7 @@ studentsurvey@ssc.isct.ac.jp
   </svg></a></p>
   <a class="c-link" href=""></a>
 </dd></div>
+<!--使わなくなったFacebook-->
 <!-- <div class="c-definitionList__item">
   <dt class="c-definitionList__term">
   <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="Facebook">

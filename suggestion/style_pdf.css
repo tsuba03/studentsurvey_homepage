@@ -13,3 +13,74 @@ iframe {
 /* .c-searchTool__tagButton:has(input:checked)::before {
     background-image: url(../assets/img/icons/inverted/checkbox-on.svg);
 } */
+
+.my-c-searchTool{
+    display:flex;
+    flex-direction:column;
+    row-gap:var(--semantic-space-inner-l);
+    margin-top:var(--semantic-space-inner-ll)}
+.my-c-searchTool:first-child{margin-top:0}
+
+.my-c-searchTool__tagControls{margin:0;padding:0;border:none;display:flex;flex-wrap:wrap;gap:var(--semantic-space-inner-mms)}
+.my-c-searchTool__tagControls legend{font-size:0}
+
+
+.my-c-searchTool__tagButton{
+    display:flex;
+    align-items:center;
+    gap:var(--semantic-space-hairline-m);
+    padding:var(--semantic-space-inner-s) var(--semantic-space-inner-mms);
+    font-size:16px;
+    line-height:20px;
+    letter-spacing:1px;
+    font-weight:500;
+    font-feature-settings:"palt";
+    color:var(--ui-text-status-link);
+    border-radius:var(--semantic-corner-radius-pill);
+    border:1px solid var(--ui-line-status-link);
+    background-color:var(--ui-background-default);
+    cursor:pointer;
+    user-select:none}
+html[lang=en] .my-c-searchTool__tagButton{
+    font-size:16px;
+    line-height:22px;
+    letter-spacing:.36px}
+.my-c-searchTool__tagButton:hover{
+    background-color:var(--ui-background-emphasize-mid-tertiary);
+    color:var(--ui-text-status-hover)}
+@media screen and (max-width: 767px){
+    .my-c-searchTool__tagButton{
+        font-size:14px;
+        line-height:20px;
+        letter-spacing:.5px;
+        font-weight:500;
+        font-feature-settings:"palt"}
+        html[lang=en] .my-c-searchTool__tagButton{
+            font-size:14px;
+            line-height:20px;
+            letter-spacing:.4px}
+        }
+.my-c-searchTool__tagButton input{
+    margin:0;
+    padding:0;
+    background:none;
+    border:none;
+    border-radius:0;
+    outline:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none}
+.my-c-searchTool__tagButton::before{
+    content:"";
+    display:inline-block;
+    width:1.25em;
+    height:1.25em;
+    fill:currentColor;
+    background:url(../assets/img/icons/checkbox-off.svg) no-repeat 0 0}
+.my-c-searchTool__tagButton:has(input:checked){
+    color:var(--ui-text-inverted);
+    background-color:var(--ui-background-brand-primary)}
+.my-c-searchTool__tagButton:has(input:checked)::before{
+    background-image:url(../assets/img/icons/inverted/checkbox-on.svg)}
+.my-c-searchTool__tagButton:has(input:focus-visible){
+    outline:4px solid var(--ui-line-status-focus)}
