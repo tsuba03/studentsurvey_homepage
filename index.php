@@ -654,12 +654,27 @@ studentsurvey@ssc.isct.ac.jp
   松本淳弥（代表）、吉村亮哉（副代表）、東 翼（副代表）、飯干成美、大河原早紀、知念優、永岡由之、野村彩乃、長谷川義人、山崎彩佳、吉田拓暉
 </p>
 </div>
-  <div class="c-heading--h5">
-    <h5 class="c-heading__label">各種SNS</h5>
+
+<div class="c-heading--h3">
+<h3 class="c-heading__label">大岡山学生支援センター自律支援実施委員会　学勢調査2026 教職員WG</h3>
+<p class="c-paragraph">
+  鍵直樹（建築学系・主査）、伊東幸子（学生支援センター）、山田恵美子（学生支援センター）、
+長谷川純（総合研究院）、弓山達也（リベラルアーツ研究教育院）、猪原健弘（リベラルアーツ研究教育院）、
+高田純（保健管理センター）、太田絵里（アントレプレナーシップ教育機構）、
+田中功一（学生支援課）、岡村純（学生支援課）
+</p>
+</div>
+</div>
+
+<div class="c-heading c-heading--h3">
+<div class="c-heading__inner">
+<h3 class="c-heading__label" id="inquiry">各種SNS</h3>
+</div>
+</div>
 <dl class="c-definitionList c-contactList__data">
 <div class="c-definitionList__item">
   <dt class="c-definitionList__term">
-  <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="X">
+  <svg class="c-link__icon c-link__icon--external icon" style="width: 1.5em;height: 1.5em;" role="img" aria-label="X">
   <use xlink:href="assets/img/sprite.svg#BrandX"></use>
   </svg></dt>
   <dd class="c-definitionList__description">
@@ -673,7 +688,7 @@ studentsurvey@ssc.isct.ac.jp
 </dd></div>
 <div class="c-definitionList__item">
   <dt class="c-definitionList__term">
-  <svg class="c-link__icon c-link__icon--external icon" role="img" aria-label="Instagram">
+  <svg class="c-link__icon c-link__icon--external icon" style="width: 1.5em;height: 1.5em;" role="img" aria-label="Instagram">
   <use xlink:href="assets/img/sprite.svg#BrandInstagram"></use>
   </svg></dt>
   <dd class="c-definitionList__description">
@@ -700,18 +715,7 @@ studentsurvey@ssc.isct.ac.jp
   </svg></a></p>
   <a class="c-link" href=""></a>
 </dd></div> -->
-</dl></div>
-
-<div class="c-heading--h3">
-<h3 class="c-heading__label">大岡山学生支援センター自律支援実施委員会　学勢調査2026 教職員WG</h3>
-<p class="c-paragraph">
-  鍵直樹（建築学系・主査）、伊東幸子（学生支援センター）、山田恵美子（学生支援センター）、
-長谷川純（総合研究院）、弓山達也（リベラルアーツ研究教育院）、猪原健弘（リベラルアーツ研究教育院）、
-高田純（保健管理センター）、太田絵里（アントレプレナーシップ教育機構）、
-田中功一（学生支援課）、岡村純（学生支援課）
-</p>
-</div>
-</div>
+</dl>
 
 <div class="c-heading c-heading--h3">
 <div class="c-heading__inner">

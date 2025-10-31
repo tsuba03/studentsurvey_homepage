@@ -77,6 +77,20 @@
 <div class="c-heading__inner">
 <h1 class='c-heading__label'>提言検索</h1>
 <p class="c-heading__lead">2016年から2024年までに発行した提言書の提言を検索いただけます。</p>
+
+<!--データ利用のお願い-->
+<div class="c-importantNotice">
+  <div class="c-importantNotice__header">
+    <h2 class="c-importantNotice__heading">お願い</h2>
+  </div>
+  <div class="c-importantNotice__body">
+    <p class="c-paragraph c-paragraph--sizeM">
+      学勢調査のデータを利用する際には、<u>学内外に関わらず</u>、
+      事前に<a href="#inquiry">大岡山学生支援センター 未来人材育成支援室（学生活動支援窓口）</a>へご連絡ください
+    </p>
+  </div>
+</div>
+
 </div>
 </div>
 </div>
@@ -135,7 +149,8 @@
     <!--キーワード検索検索-->
     <div class="grid__col grid__col--span12">
     <div class="c-form__item">
-    <label class="c-form__label" for="input-text"> <span class="c-form__labelText">キーワード</span></label>
+    <label class="c-form__label" for="input-text"> <span class="c-form__labelText">キーワード</span>
+    <span class="c-form__description">提言タイトルの部分一致で検索を行えます。</span> </label>
       <div class="c-searchTool">
           <div class="c-search">
           <div class="c-search__input">
@@ -221,7 +236,7 @@ $countStmt->execute($params);
 $total = (int)$countStmt->fetchColumn();
 
 // ページデータ取得
-$sql = "SELECT Year, Category, Type, Title, Page, ID " . $sqlBase . " LIMIT :limit OFFSET :offset";
+$sql = "SELECT Year, Category, Type, Title, Page, ID " . $sqlBase . " ORDER BY Year DESC LIMIT :limit OFFSET :offset";
 $stmt = $db->prepare($sql);
 
 // LIMIT, OFFSET は整数バインド
