@@ -134,9 +134,9 @@ if ($row) {
         <th>種類</th>
         <th>提言番号</th>
         <th>「提言書」ページ番号</th>
-        <!--大学の回答がNullでないなら表示-->
+        <!--大学の対応がNullでないなら表示-->
         <?php if ($response_pdf && $res_page): ?>
-        <th>「大学の回答」ページ</th>
+        <th>「大学の対応」ページ</th>
         <?php endif; ?>
       </tr>
     </thead>
@@ -165,11 +165,11 @@ if ($row) {
       </svg>
     </a>
   </div>
-        <!--大学の回答がNullでないなら表示-->
+        <!--大学の対応がNullでないなら表示-->
 <?php if ($response_pdf && $res_page): ?>
     <div class="c-utilityLinkGroup__item">
     <a href="<?= $response_pdf ?>#page=<?= $res_page ?>" class="c-link c-utilityLink  c-utilityLink--bordered c-utilityLink--sizeLL" target="_blank" rel="noopener noreferrer">
-      大学の回答
+      大学の対応
       <svg class="c-button__icon c-button__icon--right icon" aria-hidden="true" role="img">
         <use xlink:href="/studentsurvey/assets/img/sprite.svg#pdf"></use>
       </svg>
@@ -192,11 +192,11 @@ if ($row) {
 </div>
   <iframe src="<?= $pdf_path ?>#page=<?= $page ?>"></iframe>
 
-<!--大学の回答がNullでないなら表示-->
+<!--大学の対応がNullでないなら表示-->
 <?php if ($response_pdf && $res_page): ?>
 <div class="c-heading c-heading--h4">
   <div class="c-heading__inner">
-    <h4 class="c-heading__label">大学からの回答</h4>
+    <h4 class="c-heading__label">大学の対応</h4>
   </div>
 </div>
     <iframe src="<?= $response_pdf ?>#page=<?= $res_page ?>"></iframe>
